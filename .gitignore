@@ -1,1 +1,9 @@
+venv
+.vagrant
+vagrant
+vagrant.sh
+*.pyc
 .DS_Store
+Vagrantfile
+static/images
+static/images/*
