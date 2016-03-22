@@ -27,19 +27,23 @@ twitter = Twitter(
 # Twitter API docs:
 # https://dev.twitter.com/docs/api/1/get/search
 #-----------------------------------------------------------------------
-query = twitter.search.tweets(q = "apple", geocode = "37.781157,-122.398720,250mi", result_type = "recent", include_entities = "false", count = 100)
-
+# query = twitter.search.tweets(q = "from:CNNPolitics", geocode = "37.781157,-122.398720,250mi", result_type = "recent", include_entities = "false", count = 100)
+query = twitter.search.tweets(q = "from:CNNPolitics", result_type = "recent", include_entities = "false", count = 100)
 #-----------------------------------------------------------------------
 # How long did this query take?
 #-----------------------------------------------------------------------
-print "Search complete (%.3f seconds)" % (query["search_metadata"]["completed_in"])
-print json.dumps(query, indent=2)
+# print "Search complete (%.3f seconds)" % (query["search_metadata"]["completed_in"])
+# print json.dumps(query, indent=2)
 
 #-----------------------------------------------------------------------
 # Loop through each of the results, and print its content.
 #-----------------------------------------------------------------------
-tweets = []
-for result in query["statuses"]:
-	tweets.append(result["text"])
-
-	# print "(%s) @%s %s" % (result["created_at"], result["user"]["screen_name"], result["text"])
+# tweets = []
+with open("politicalterms.txt", "a") as myfile:
+	for result in query["statuses"]:
+		myfile.write(result["text"].encode("utf-8") + "\n")
+# count = 0
+# for result in query["statuses"]:
+# 	count += 1
+# 	# tweets.append(result["text"])
+# 	print count, "%s" % (result["text"])
