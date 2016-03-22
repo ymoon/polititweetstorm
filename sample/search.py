@@ -28,7 +28,7 @@ twitter = Twitter(
 # https://dev.twitter.com/docs/api/1/get/search
 #-----------------------------------------------------------------------
 # query = twitter.search.tweets(q = "from:CNNPolitics", geocode = "37.781157,-122.398720,250mi", result_type = "recent", include_entities = "false", count = 100)
-query = twitter.search.tweets(q = "from:CNNPolitics", result_type = "recent", include_entities = "false", count = 100)
+query = twitter.search.tweets(q = "from:CNNPolitics since:2016-01-01", include_entities = "false", count = 100)
 #-----------------------------------------------------------------------
 # How long did this query take?
 #-----------------------------------------------------------------------
@@ -38,12 +38,12 @@ query = twitter.search.tweets(q = "from:CNNPolitics", result_type = "recent", in
 #-----------------------------------------------------------------------
 # Loop through each of the results, and print its content.
 #-----------------------------------------------------------------------
-# tweets = []
-with open("politicalterms.txt", "a") as myfile:
-	for result in query["statuses"]:
-		myfile.write(result["text"].encode("utf-8") + "\n")
-# count = 0
-# for result in query["statuses"]:
-# 	count += 1
-# 	# tweets.append(result["text"])
-# 	print count, "%s" % (result["text"])
+#tweets = []
+# with open("politicalterms.txt", "a") as myfile:
+# 	for result in query["statuses"]:
+# 		myfile.write(result["text"].encode("utf-8") + "\n")
+count = 0
+for result in query["statuses"]:
+	count += 1
+	#tweets.append(result["text"])
+	print count, "%s" % (result["text"])
