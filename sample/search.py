@@ -31,64 +31,12 @@ twitter = Twitter(
 # https://dev.twitter.com/docs/api/1/get/search
 #-----------------------------------------------------------------------
 # query = twitter.search.tweets(q = "from:CNNPolitics", geocode = "37.781157,-122.398720,250mi", result_type = "recent", include_entities = "false", count = 100)
-stop_words = """a
-	all
-	an
-	and
-	any
-	are
-	as
-	at
-	be
-	been
-	but
-	by 
-	few
-	from
-	for
-	have
-	he
-	her
-	here
-	him
-	his
-	how
-	i
-	in
-	is
-	it
-	its
-	many
-	me
-	my
-	none
-	of
-	on 
-	or
-	our
-	she
-	some
-	the
-	their
-	them
-	there
-	they
-	that 
-	this
-	to
-	us
-	was
-	what
-	when
-	where
-	which
-	who
-	why
-	will
-	with
-	you
-	your"""
 
+stop_words = {}
+infile = open("stopwords.txt")
+words = infile.readlines()
+for word in words:
+	stop_words[word[:-1]] = True
 
 query = twitter.search.tweets(q = "from:CNNPolitics", include_entities = "false", count = 100)
 query2 = twitter.search.tweets(q = "from:NBCPolitics", include_entities = "false", count = 100)
@@ -132,9 +80,10 @@ for result in query4["statuses"]:
 	#tweets.append(result["text"])
 	all_tweets += result["text"].encode("utf-8") + " "
 	# print count, "%s" % (result["text"].encode("utf-8"))
+regex.sub("", all_tweets)
 for word in all_tweets.split(" "):
-	if word not in stop_words:
-		frequencies[word] = frequencies.get(word, 0) + 1
+	if not stop_words.get(word.lower(), False):
+		frequencies[word.lower()] = frequencies.get(word.lower(), 0) + 1
 
 sorted_frequencies = sorted(frequencies.items(), key=operator.itemgetter(1), reverse= True)
 
