@@ -80,7 +80,7 @@ for result in query4["statuses"]:
 	#tweets.append(result["text"])
 	all_tweets += result["text"].encode("utf-8") + " "
 	# print count, "%s" % (result["text"].encode("utf-8"))
-regex.sub("", all_tweets)
+all_tweets = re.sub('\W'," ", all_tweets)
 for word in all_tweets.split(" "):
 	if not stop_words.get(word.lower(), False):
 		frequencies[word.lower()] = frequencies.get(word.lower(), 0) + 1
