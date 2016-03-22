@@ -66,27 +66,24 @@ frequencies = {}
 count = 0
 for result in query["statuses"]:
 	count += 1
-	#tweets.append(result["text"])
 	all_tweets += result["text"].encode("utf-8") + " "
-	# print count, "%s" % (result["text"].encode("utf-8"))
+
 for result in query2["statuses"]:
 	count += 1
-	#tweets.append(result["text"])
 	all_tweets += result["text"].encode("utf-8") + " "
-	# print count, "%s" % (result["text"].encode("utf-8"))
+
 for result in query3["statuses"]:
 	count += 1
-	#tweets.append(result["text"])
 	all_tweets += result["text"].encode("utf-8") + " "
-	# print count, "%s" % (result["text"].encode("utf-8"))
+
 for result in query4["statuses"]:
 	count += 1
-	#tweets.append(result["text"])
 	all_tweets += result["text"].encode("utf-8") + " "
-	# print count, "%s" % (result["text"].encode("utf-8"))
+
+all_tweets = re.sub('https\S+', " ", all_tweets)
 all_tweets = re.sub('\W'," ", all_tweets)
 for word in all_tweets.split():
-	if not stop_words.get(word.lower(), False):
+	if (not stop_words.get(word.lower(), False)):
 		frequencies[word.lower()] = frequencies.get(word.lower(), 0) + 1
 
 sorted_frequencies = sorted(frequencies.items(), key=operator.itemgetter(1), reverse= True)
