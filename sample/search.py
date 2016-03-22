@@ -55,6 +55,10 @@ query4 = twitter.search.tweets(q = "from:NPRPolitics", include_entities = "false
 regex = re.compile('[^a-zA-Z]')
 tweets = []
 all_tweets = ""
+stop_words["rt"] = True
+stop_words["https"] = True
+stop_words["http"] = True
+
 # with open("politicalterms.txt", "a") as myfile:
 # 	for result in query["statuses"]:
 # 		myfile.write(result["text"].encode("utf-8") + "\n")
@@ -81,7 +85,7 @@ for result in query4["statuses"]:
 	all_tweets += result["text"].encode("utf-8") + " "
 	# print count, "%s" % (result["text"].encode("utf-8"))
 all_tweets = re.sub('\W'," ", all_tweets)
-for word in all_tweets.split(" "):
+for word in all_tweets.split():
 	if not stop_words.get(word.lower(), False):
 		frequencies[word.lower()] = frequencies.get(word.lower(), 0) + 1
 
