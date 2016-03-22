@@ -38,5 +38,8 @@ print json.dumps(query, indent=2)
 #-----------------------------------------------------------------------
 # Loop through each of the results, and print its content.
 #-----------------------------------------------------------------------
+tweets = []
 for result in query["statuses"]:
-	print "(%s) @%s %s" % (result["created_at"], result["user"]["screen_name"], result["text"])
+	tweets.append(result["text"])
+
+	# print "(%s) @%s %s" % (result["created_at"], result["user"]["screen_name"], result["text"])
