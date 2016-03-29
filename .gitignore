@@ -7,3 +7,6 @@ vagrant.sh
 Vagrantfile
 static/images
 static/images/*
+*.pdf
+*.docx
+*.doc
