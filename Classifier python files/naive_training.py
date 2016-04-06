@@ -1,8 +1,9 @@
 import pandas
-from nltk.classify import NaiveBayesClassifier as NBC
+#from nltk.classify import NaiveBayesClassifier as NBC
 from nltk import FreqDist as fd
 from nltk.tokenize import word_tokenize
 import nltk
+import json
 
 
 
@@ -13,6 +14,8 @@ tokens = []
 words = []
 count = 0
 trainSentences = []
+
+#1) read in data to eventually use as training
 
 #read row by row from csv file: http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/
 for df in pandas.read_csv(input, chunksize=1):
@@ -35,6 +38,8 @@ for df in pandas.read_csv(input, chunksize=1):
 # frequency_dictionary = fd(words) #creates frequency distribution of all the words in all tweet
 # word_features = frequency_dictionary.keys() #creates list of word features ordered by frequency
 
+# 2) turn data into the specified format to use as training data
+
 #create a set from a generator
 #generator takes each sentence and tokenizes it, lowercases it and puts it into a set
 #result is every word in the training vocab
@@ -43,7 +48,12 @@ the_words = set(word.lower() for s in trainSentences for word in word_tokenize(s
 #collects every word mapped to whether or not it is in the tokenized sentence and then if that sentence was set as pos or neg
 training = [({word : (word in word_tokenize(t[0])) for word in the_words}, t[1]) for t in trainSentences]
 
-nbClassifier = NBC.train(training)
+#3) store the converted training data into a file
+    #JSON easiest to store and re load
+with open("training_formatted_data.json", 'w') as tfd:
+    json.dump(training, tfd)
+
+
 
 
 
