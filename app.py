@@ -15,7 +15,8 @@ app = Flask(__name__, template_folder='templates')
 # mysql.init_app(app)
 
 # Register the controllers
-app.register_blueprint(api.twitter_api, static_url_path="static")
+app.register_blueprint(controllers.twitter_api, url_prefix='/polititweetstorm', static_url_path="static")
+app.register_blueprint(controllers.main, url_prefix='/polititweetstorm', static_url_path="static")
 
 # Listen on external IPs
 # For us, listen to port 3000 so you can just run 'python app.py' to start the server
