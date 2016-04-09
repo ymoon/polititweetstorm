@@ -1,8 +1,8 @@
 from flask import *
-import get_tweets as gt
-import naive_system as ns
-import topic_search as ts
-import naive_training as nt
+import classifier.get_tweets as gt
+import classifier.naive_system as ns
+import classifier.topic_search as ts
+import classifier.naive_training as nt
 
 
 search = Blueprint('search', __name__, template_folder='templates')
