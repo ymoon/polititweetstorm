@@ -14,4 +14,4 @@ static/images/*
 Classifier\ python\ files/results.json
 Classifier\ python\ files/out.txt
 Classifier\ python\ files/pos_neg_counts.txt
-
+controllers/.DS_Store
