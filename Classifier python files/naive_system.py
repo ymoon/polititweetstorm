@@ -5,6 +5,7 @@ import nltk
 import json
 
 
+
 #positive and negative tweet counts - specific to a location query that came in 
 pos = 0
 neg = 0
@@ -14,18 +15,27 @@ neg = 0
 with open("training_formatted_data.json", 'r') as tfd:
 	training = json.load(tfd) 
 
+# 4) b. Read from the file from the training which has all feature words stored in a json object (list)
+with open("feature_words.json", 'r') as fw:
+	the_words = json.load(fw)
+
+# 4) c. Read from the query file assuming we save it in another file
+with open("results.json", 'r') as q:
+	q_results = json.load(q)
+
+
 # 5) Pass that data into the classifier object - training the classifier
 nb_classifier = NBC.train(training)
 
-# 6) Run api request to get tweets form users containing our specified political words
-	#- FILL THIS IN - MIGHT BE BEST TO READ THIS IN FROM A FILE AS WELL
-
+# 6) read api request results from file, parse text of tweets and save into test_sentence
+for tweet in q_results["statuses"]:
+	test_sentence = tweet["text"]
+	#print test_sentence
 
 # 7) Grab the content of each tweet and format into testable data - like how we formatted training data
 	#- NOT SURE WHAT TWEET DATA (test_sentences) WILL LOOK LIKE BUT LOOP THRU IT AND RUN THE FOLLOWING CODE TO FORMAT IT
-	the_words = #this needs to be the same set of words from before - FIGURE THIS OUT - file storage again?
 	#collects every word mapped to whether or not it is in the test sentence
-	test_sent_features = {word.lower(): (word in word_tokenize(test_sentence.lower())) for word in all_words}
+	test_sent_features = {word.lower(): (word in word_tokenize(test_sentence.lower())) for word in the_words}
 	
 	#within the loop
 
@@ -41,6 +51,9 @@ nb_classifier = NBC.train(training)
 	#-don't actually need to do anything in this step since it is in dictionary
 # 10) determine the overall/average class of the tweets in that area
 
+with open("pos_neg_counts.txt", "w") as pos_neg:
+	results = "positive: " + str(pos) + " negative: " + str(neg)
+	pos_neg.write(results)
 
 #- !!! can just determine which class for location is better by doing comparison on the front end side or can do before hand !!!
 # 11) pass the location data dictionary to the front end to be displayed 
