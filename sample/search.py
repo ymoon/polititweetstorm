@@ -9,11 +9,12 @@
 import json
 import re
 import operator
+import nltk
+from nltk.collocations import *
 from twitter import *
 
 #-----------------------------------------------------------------------
-# load our API credentials 
-#-----------------------------------------------------------------------
+# load our API credentials
 def get_top_politcal_topics():
 	config = {}
 	execfile("config.py", config)
@@ -82,16 +83,57 @@ def get_top_politcal_topics():
 
 	all_tweets = re.sub('https\S+', " ", all_tweets)
 	all_tweets = re.sub('\W'," ", all_tweets)
+
+    #single words
 	for word in all_tweets.split():
 		if (not stop_words.get(word.lower(), False)):
 			frequencies[word.lower()] = frequencies.get(word.lower(), 0) + 1
-
 	sorted_frequencies = sorted(frequencies.items(), key=operator.itemgetter(1), reverse= True)
 
-	# count1 = 0
-	# while count1 < 20:
-	# 	print sorted_frequencies[count1]
-	# 	count1 += 1
-	#return list of top tweets - deal with top 20 elsewhere
+	#list of only the terms without frequency
+	term_list = sorted_frequencies[:20]
+	term_list = [i[0] for i in term_list]
+
+
+	#final fuzzy sets creation and checking for bigrams
+	fuzzy_sets = []
+	bigram_words = []
+
+	tokens = nltk.word_tokenize(all_tweets)
+	lower_tokens = [w.lower() for w in tokens]
+	bgs = nltk.bigrams(lower_tokens)
+	fdist = nltk.FreqDist(bgs)
+	x = sorted(fdist.items(), key=operator.itemgetter(1), reverse=True)
+	counter = 0
+	for k,v in x:
+	    if k[0] in term_list and k[1] in term_list:
+	        fuzzy_sets.append((k[0], k[1]))
+	        bigram_words.append(k[0])
+	        bigram_words.append(k[1])
+	#    print k,v
+	#    print k[0]
+	    counter += 1
+	    if counter == 10:
+	        break
+	for words in term_list:
+	    if words not in bigram_words:
+	        fuzzy_sets.append(words)
+
+	#printing for testing
+	count1 = 0
+	while count1 < 20:
+		print sorted_frequencies[count1]
+		count1 += 1
+	print fuzzy_sets
+		# count1 = 0
+		# while count1 < 20:
+		# 	print sorted_frequencies[count1]
+		# 	count1 += 1
+		#return list of top tweets - deal with top 20 elsewhere
 	return sorted_frequencies
+
+
+
+
+
 
