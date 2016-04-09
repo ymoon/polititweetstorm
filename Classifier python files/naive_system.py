@@ -3,6 +3,8 @@ from nltk import FreqDist as fd
 from nltk.tokenize import word_tokenize
 import nltk
 import json
+#move the search.py file into the same folder !!!!!!!!
+from search import get_top_politcal_topics
 
 
 
