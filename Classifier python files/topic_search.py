@@ -15,7 +15,7 @@ from twitter import *
 
 #-----------------------------------------------------------------------
 # load our API credentials
-def get_top_politcal_topics():
+def get_top_topics():
 	config = {}
 	execfile("config.py", config)
 
