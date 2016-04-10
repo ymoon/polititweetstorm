@@ -28,10 +28,28 @@ def search_route():
 	if request.method == "POST":
 		topic = request.args.get("topic")
 		location = request.args.get("location")
+		relevent_tweets = set()
 		if topic and location: #requests/search has been sent - run it and load the results page
 			location = get_geocor(location) #get lat and lng of city
 			search_results = gt.grab_tweets(topic, location)
-			sentiment_results = nt.sent_system(search_results)
+				for x in search_results["statuses"]:
+					sentance = x["text"]
+					relevent_tweets.add(x)
+			# if it is a bigram
+			topic = topic.split()
+			if len(topic) > 1:
+				search_results2 = gt.grab_tweets(topic[0], location)
+				for x in search_results2["statuses"]:
+					sentance = x["text"]
+					relevent_tweets.add(x)
+
+				search_results3 = gt.grab_tweets(topic[1], location)
+				for x in search_results3["statuses"]:
+					sentance = x["text"]
+					relevent_tweets.add(x)
+
+				
+			sentiment_results = nt.sent_system(relevent_tweets)
 			return render_template("results.html", sentiment_results = sentiment_results)
 	else: #the normal search page display trending topics
 		topics = ts.get_top_topics()
