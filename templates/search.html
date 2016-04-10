@@ -36,9 +36,9 @@
 	<div class="container">
 	    <div id="topics" class="card-panel section scrollspy">
 	    	<h5 class="header">Select a trending topic<i class="material-icons">trending_up</i> and locaiton</h5>
-	    	<form action="/search" enctype="multipart/form-data">
+	    	<form action="/search" method= "POST" enctype="multipart/form-data">
 	    		Please enter a city, state:<br>
-	    		<input type="text" name="location"><br>
+	    		<input id = 'pac-input' type="text" name="location"><br>
 
 	    		{% for topic in topics %}
 				<input type="radio" name="topic">{{topic}}<br>
@@ -61,6 +61,28 @@
 
 	<script type="text/javascript" src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>
+
+	 <script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initAutocomplete() {
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTNIg-6BKYrjrB9DnLij6tX4sAw_XeYrk&libraries=places&callback=initAutocomplete"
+         async defer></script>
+  </body>
 </body>
 
 </html>
