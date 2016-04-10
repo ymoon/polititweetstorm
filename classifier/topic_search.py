@@ -34,7 +34,7 @@ def get_top_topics():
 	# query = twitter.search.tweets(q = "from:CNNPolitics", geocode = "37.781157,-122.398720,250mi", result_type = "recent", include_entities = "false", count = 100)
 
 	stop_words = {}
-	infile = open("classifier/stopwords.txt")
+	infile = open("stopwords.txt")
 	words = infile.readlines()
 	for word in words:
 		stop_words[word[:-1]] = True
@@ -91,7 +91,7 @@ def get_top_topics():
 	sorted_frequencies = sorted(frequencies.items(), key=operator.itemgetter(1), reverse= True)
 
 	#list of only the terms without frequency
-	term_list = sorted_frequencies[:20]
+	term_list = sorted_frequencies[:30]
 	term_list = [i[0] for i in term_list]
 
 
@@ -113,11 +113,15 @@ def get_top_topics():
 	#    print k,v
 	#    print k[0]
 	    counter += 1
-	    if counter == 10:
+	    if counter == 20:
 	        break
+	count4 = 0
 	for words in term_list:
 	    if words not in bigram_words:
 	        fuzzy_sets.append(words)
+	    if count4 > 8:
+	    	break
+	    count4 += 1
 
 	#printing for testing
 	count1 = 0
