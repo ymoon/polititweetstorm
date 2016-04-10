@@ -34,7 +34,7 @@ def get_top_topics():
 	# query = twitter.search.tweets(q = "from:CNNPolitics", geocode = "37.781157,-122.398720,250mi", result_type = "recent", include_entities = "false", count = 100)
 
 	stop_words = {}
-	infile = open("stopwords.txt")
+	infile = open("classifier/stopwords.txt")
 	words = infile.readlines()
 	for word in words:
 		stop_words[word[:-1]] = True
@@ -107,7 +107,7 @@ def get_top_topics():
 	counter = 0
 	for k,v in x:
 	    if k[0] in term_list and k[1] in term_list:
-	        fuzzy_sets.append((k[0], k[1]))
+	        fuzzy_sets.append((k[0] + " " + k[1]))
 	        bigram_words.append(k[0])
 	        bigram_words.append(k[1])
 	#    print k,v
@@ -121,19 +121,20 @@ def get_top_topics():
 
 	#printing for testing
 	count1 = 0
-	while count1 < 20:
-		print sorted_frequencies[count1]
-		count1 += 1
+	# while count1 < 20:
+	# 	# print sorted_frequencies[count1]
+	# 	count1 += 1
 	print fuzzy_sets
 		# count1 = 0
 		# while count1 < 20:
 		# 	print sorted_frequencies[count1]
 		# 	count1 += 1
 		#return list of top tweets - deal with top 20 elsewhere
-	return sorted_frequencies
+	return fuzzy_sets
 
 
-
+if __name__ == '__main__':
+    get_top_topics()
 
 
 
