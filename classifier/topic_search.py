@@ -34,7 +34,7 @@ def get_top_topics():
 	# query = twitter.search.tweets(q = "from:CNNPolitics", geocode = "37.781157,-122.398720,250mi", result_type = "recent", include_entities = "false", count = 100)
 
 	stop_words = {}
-	infile = open("stopwords.txt")
+	infile = open("classifier/stopwords.txt")
 	words = infile.readlines()
 	for word in words:
 		stop_words[word[:-1]] = True
