@@ -43,11 +43,40 @@ print "done with reading input"
 #create a set from a generator
 #generator takes each sentence and tokenizes it, lowercases it and puts it into a set
 #result is every word in the training vocab
-the_words = list(set(word.lower() for s in trainSentences for word in word_tokenize(s[0])))
+#the_words = list(set(word.lower() for s in trainSentences for word in word_tokenize(s[0])))
+
+#to account for decode errors 
+the_words = set([])
+
+for s in trainSentences:
+    try:
+        tok_words = word_tokenize(s[0])
+    except e:
+        continue
+    for word in tok_words:
+        the_words.add(word.lower())
+
+the_words = list(the_words)
 
 print "done with creating the words"
 #collects every word mapped to whether or not it is in the tokenized sentence and then if that sentence was set as pos or neg
-training = [({word : (word in word_tokenize(t[0])) for word in the_words}, t[1]) for t in trainSentences]
+#training = [({word : (word in word_tokenize(t[0])) for word in the_words}, t[1]) for t in trainSentences]
+
+training = []
+
+for t in trainSentences:
+    dic = {}
+    try:
+        tok_sent = word_tokenize(t[0])
+    except e:
+        continue
+    for word in the_words:
+        if word in tok_sent:
+            dic[word] = True
+        else:
+            dic[word] = False
+    entry = (dic, t[1])
+    training.append(entry)
 
 print "done with mapping traning data"
 #3) store the converted training data into a file
