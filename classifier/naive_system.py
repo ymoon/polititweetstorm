@@ -29,14 +29,13 @@ def sent_system(search_results):
 	nb_classifier = NBC.train(training)
 
 	# 6) read api request results from file, parse text of tweets and save into test_sentence
-	for tweet in search_results["statuses"]:
-		test_sentence = tweet["text"]
+	for tweet in search_results:
 		#print test_sentence
 
 	# 7) Grab the content of each tweet and format into testable data - like how we formatted training data
 		#- NOT SURE WHAT TWEET DATA (test_sentences) WILL LOOK LIKE BUT LOOP THRU IT AND RUN THE FOLLOWING CODE TO FORMAT IT
 		#collects every word mapped to whether or not it is in the test sentence
-		test_sent_features = {word.lower(): (word in word_tokenize(test_sentence.lower())) for word in the_words}
+		test_sent_features = {word.lower(): (word in word_tokenize(tweet.lower())) for word in the_words}
 		
 		#within the loop
 
