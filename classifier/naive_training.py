@@ -51,7 +51,7 @@ the_words = set([])
 for s in trainSentences:
     try:
         tok_words = word_tokenize(s[0])
-    except e:
+    except UnicodeDecodeError:
         continue
     for word in tok_words:
         the_words.add(word.lower())
@@ -68,7 +68,7 @@ for t in trainSentences:
     dic = {}
     try:
         tok_sent = word_tokenize(t[0])
-    except e:
+    except UnicodeDecodeError:
         continue
     for word in the_words:
         if word in tok_sent:
