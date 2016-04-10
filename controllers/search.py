@@ -32,9 +32,9 @@ def search_route():
 		if topic and location: #requests/search has been sent - run it and load the results page
 			location = get_geocor(location) #get lat and lng of city
 			search_results = gt.grab_tweets(topic, location)
-				for x in search_results["statuses"]:
-					sentance = x["text"]
-					relevent_tweets.add(x)
+			for x in search_results["statuses"]:
+				sentance = x["text"]
+				relevent_tweets.add(x)
 			# if it is a bigram
 			topic = topic.split()
 			if len(topic) > 1:
