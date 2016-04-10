@@ -25,17 +25,17 @@ def search_route():
 
 
 
-def get_geocor(city):
+# def get_geocor(city):
 
 
 
-	gmaps = googlemaps.Client(key='AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E')
+# 	gmaps = googlemaps.Client(key='AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E')
 
-# Geocoding an address
-	geocode_result = gmaps.geocode(city)
-	print geocode_result
+# # Geocoding an address
+# 	geocode_result = gmaps.geocode(city)
+# 	print geocode_result
 
 
-my_city = "Bethesda, Md"
-get_geocor(my_city)
+# my_city = "Bethesda, Md"
+# get_geocor(my_city)
 

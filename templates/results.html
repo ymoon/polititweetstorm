@@ -7,9 +7,11 @@
 	<!--Import CSS-->
   	<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}" media="screen,projection"/>
 	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
-	<link rel="stylesheet" href="{{url_for('static', filename='css/landing.css')}}" />
+
 	<!-- Snowstorm Magic -->
 	<script type="text/javascript" src="{{url_for('static', filename='js/snowstorm-min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/chart-min.js')}}"></script>
+
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<meta charset="utf-8">
@@ -28,17 +30,73 @@
 		</nav>
 	</div>
 
-	
+	<div class="container">
+		<div class="center-align valign-wrapper" style="text-align: center">
+			<!-- pie chart canvas element -->
+			<canvas id="countries" width="600" height="400" style="width: 600px; height: 400px;"></canvas>
+		</div>
+	</div>
+
+
+<!-- 	<div class="container">
+	    <div id="topics" class="card-panel section scrollspy">
+	    	<h5 class="header">trending <i class="material-icons">trending_up</i></h5>
+
+	    	{% for topic in topics %}
+			<button class="btn-flat waves-effect waves-teal" href>{{topic}}</button></td>
+	    	{% endfor %}
+	    </div>
+	</div>
     
 
 	<div class="container">
 		<div id="map"></div>
-		<div id="googleMap" style="width:100%;height:800px;"></div>
+		<div id="googleMap" style="width:100%;height:400px;"></div>
 	</div>
-
-    
+ -->
   	<!-- Google Maps API -->
 <!-- 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E&callback=initMap" type="text/javascript"></script> -->
+
+	<script>
+		
+		// pie chart data
+		var pieData = [
+			{
+				value: 20,
+				color:"#878BB6"
+			},
+			{
+				value : 40,
+				color : "#4ACAB4"
+			},
+			{
+				value : 10,
+				color : "#FF8153"
+			},
+			{
+				value : 30,
+				color : "#FFEA88"
+			}
+		];
+
+		// pie chart options
+		var pieOptions = {
+			segmentShowStroke : false,
+			animateScale : true,
+			animateRotate : true,
+			legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){\%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){\%><%=segments[i].label%><\%\}%></li><\%\}%></ul>",
+		}
+		
+		// get pie chart canvas
+		var countries= document.getElementById("countries").getContext("2d");
+		
+		// draw pie chart
+		new Chart(countries).Pie(pieData, pieOptions);
+		
+	</script>
+
+
+
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E&libraries=visualization&callback=initMap">
     </script>
 
