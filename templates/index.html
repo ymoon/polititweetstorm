@@ -1,21 +1,137 @@
-{% extends "base.html" %}
-{% block content %}
-	<nav>
-	    <div class="nav-wrapper">
-		    <a href="#" class="brand-logo" style="margin-left: 10px">Polititweetstorm</a>
-		    <ul id="nav-mobile" class="right hide-on-med-and-down">
-		    	<li><a href="#"><i class="material-icons" style="padding-left:10px">home</i></a></li>
-		        <li><a href="#">Search</a></li>
-		        <li><a href="#">Results</a></li>
-	      	</ul>
-	    </div>
-  	</nav>
-	<div class="container">
-	  	<input style="margin-top:10px" id="pac-input" class="controls" type="text" placeholder="Search Box">
-	  	
-	    <div class="fixed-action-btn" style="top: 5px; right: 24px;">
-	    	<a class="btn-floating btn-large waves-effect waves-light teal lighten-1 modal-trigger" href="#modal1"><i class="material-icons">add</i></a>
-	    </div>	
-    </div>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+	<title>Poltitweetstorm</title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-{% endblock %}
+	<!--Import materialize.css-->
+  	<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}" media="screen,projection"/>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/landing.css')}}" />
+
+
+	<!-- Snowstorm Magic -->
+	<script type="text/javascript" src="{{url_for('static', filename='js/snowstorm-min.js')}}"></script>
+	<script type="text/javascript">
+		snowStorm.snowColor = '#99ccff'; // blue-ish snow!?
+		snowStorm.flakesMaxActive = 96;  // show more snow on screen at once
+		snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
+		snowStorm.followMouse = false;
+	</script>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="navbar-fixed" id="topbar">
+		<nav class="blue-grey darken-3">
+			<div class="nav-wrapper container">
+		  		<a href="#" class="brand-logo">polititweetstorm</a>
+		  		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li><a href="#main"><i class="material-icons">home</i></a></li>
+			        <li><a href="#team">Team</a></li>
+			        <li><a href="#code">Search</a></li>
+		  		</ul>
+			</div>
+		</nav>
+	</div>
+
+	<div class="page section scrollspy" id="main">
+		<div class="container center-align landing-page-top ng-scope valign-wrapper">
+		    <div class="center-align landing-page-div">
+		        <h1 class="homeLogo">
+					polititweetstorm
+		        </h1>
+		        <div class="homeText">
+		            <div>
+		                <p>How do people feel</br>about #x in y location?</p>
+		            </div>
+		        </div>
+		        <div class="homeButtons vbtns row">
+		       		<div class="col s12">
+		       			<div class="center-align">
+			                <a class="btn-large btn-rnd waves-effect hero-btn">Get Started</a>
+			                <a class="btn-large btn-rnd white grey-text hero-btn waves-effect" href="#team">Learn More</a>
+				        </div>
+			        </div>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+	<!-- <div class="page white section scrollspy" id="team">
+		<div class="container">
+			<div class="valign-wrapper center-align">
+				<div class="row">
+			        <div class="col s4">
+			        	<div class="center promo promo-example">
+				            <i class="material-icons">flash_on</i>
+				            <p class="promo-caption">Speeds up development</p>
+				            <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+			          	</div>
+			        </div>
+			        <div class="col s4">
+			          	<div class="center promo promo-example">
+				            <i class="material-icons">group</i>
+				            <p class="promo-caption">User Experience Focused</p>
+				            <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+			          	</div>
+			        </div>
+			        <div class="col s4">
+			          	<div class="center promo promo-example">
+				            <i class="material-icons">settings</i>
+				            <p class="promo-caption">Easy to work with</p>
+				            <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+			          	</div>
+			        </div>
+			  	</div>
+		  	</div>
+	  	</div>
+	</div> -->
+
+	<div class="page white section scrollspy" id="team">
+		<div class="container center-align valign-wrapper">
+			<div class="row section">
+				<h3 class="header light">Principles</h3>
+			  	<div class="col s12 l4">
+				    <img class="promo" src="images/metaphor.png">
+				    <h4 class="center">Material is the metaphor</h4>
+				    <p class="light">The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world.</p>
+			    	<br>
+			  	</div>
+
+			  	<div class="col s12 l4">
+				    <img class="promo" src="images/bold.png">
+				    <h4 class="center">Bold, graphic, intentional</h4>
+				    <p class="light">Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users.</p>
+				    <br>
+			  	</div>
+
+			  	<div class="col s12 l4">
+				    <img class="promo" src="images/motion.png">
+				    <h4 class="center">Motion provides meaning</h4>
+				    <p class="light">Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations.</p>
+			  	</div>
+			</div>
+		</div>
+	</div>
+
+
+	<a href="#" class="scrollToTop"><i class="material-icons medium font-green">keyboard_arrow_up</i></a>
+
+
+    
+  	<!-- Google Maps API -->
+	<!--   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E&callback=initMap"
+    type="text/javascript"></script> -->
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<script type="text/javascript" src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>
+</body>
+
+</html>
