@@ -7,7 +7,8 @@
 
 	<!--Import materialize.css-->
   <link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}" media="screen,projection"/>
-  <link rel="stylesheet" href="/static/css/style.css" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+  <link rel="stylesheet" href="{{url_for('static', filename='css/landing.css')}}" />
 
 
   <!-- Snowstorm Magic -->
@@ -24,9 +25,9 @@
   <meta charset="utf-8">
 </head>
 <body>
-	<div class="container">
-  	{% block content %}{% endblock %}
-	</div>
+  <div class="outer">
+  {% block content %}{% endblock %}
+  </div>
 
     
   <!-- Google Maps API -->

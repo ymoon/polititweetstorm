@@ -1,6 +1,89 @@
+body {
+	background-color: #f9f9f9;
+}
+
+html,body{
+	height:100% !important;
+	width:100% !important; 
+	margin:0px; 
+	padding:0px;
+}
+
+.outer {
+	height: 200% !important; 
+	width: 100% !important;
+}
+
+.page {
+	height:50% !important; 
+	width:100% !important;
+}
+
+#topics {
+	background-color: #f9f9f9;
+}
+
+#topbar {
+	height: 70px;
+}
+
+.landing-page-top{
+	height:650px;
+	overflow:inherit;
+	position:relative
+}
+
+.landing-page-div{
+	width:100%;
+	text-align:center
+}
+
+.homeLogo{
+	margin:80px 0 0;
+	color:#12c5a2;
+	line-height:3rem
+}
+
+.homeText{
+	margin-top:20px;
+	color:#7f7f7f
+}
+
+.homeText p{
+	margin:0
+}
+
+.homeButtons{
+	margin-top:40px
+}
+
+.vbtns .btn,.vbtns .btn-large{
+	width:140.719
+}
+
+.font-green{
+	color:#12c5a2
+}
 
 
-.center {
-	margin:0 auto;
-	max-width: 500px;
+
+
+/*Scroll to Top*/
+.scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:75px;
+	right:40px;
+	display:none;
+	background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
 }
