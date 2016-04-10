@@ -9,6 +9,11 @@ def grab_tweets(topic, location):
 	config = {}
 	execfile("config.py", config)
 
+	lat = str(location[0])
+	lng = str(location[1])
+	radius = "20mi" #subject to change, just for testing
+	location = lat + ',' + lng + ',' + radius
+
 	#configure
 	twitter = Twitter(auth = OAuth(config["access_key"], config["access_secret"], config["consumer_key"], config["consumer_secret"]))
 
