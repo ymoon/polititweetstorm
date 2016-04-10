@@ -35,11 +35,16 @@
 
 	<div class="container">
 	    <div id="topics" class="card-panel section scrollspy">
-	    	<h5 class="header">trending <i class="material-icons">trending_up</i></h5>
+	    	<h5 class="header">Select a trending topic<i class="material-icons">trending_up</i> and locaiton</h5>
+	    	<form action="/search" enctype="multipart/form-data">
+	    		Please enter a city, state:<br>
+	    		<input type="text" name="location"><br>
 
-	    	{% for topic in topics %}
-			<button class="btn-flat waves-effect waves-teal" href>{{topic}}</button></td>
-	    	{% endfor %}
+	    		{% for topic in topics %}
+				<input type="radio">{{topic}}<br>
+	    		{% endfor %}
+	    		<input type="submit" value="Submit">
+	    	</form>
 	    </div>
 	    <div id="map" class="section scrollspy">
 	    	
