@@ -19,9 +19,6 @@ def search_route():
 		return render_template("results.html", sentiment_results = sentiment_results)
 	else: #the normal search page display trending topics
 		topics = ts.get_top_topics()
-<<<<<<< Updated upstream
-		return render_template("search.html", initialize=True, topics = topics)
-=======
 
 	return render_template("search.html", initialize=True, topics = topics)
 
@@ -41,4 +38,4 @@ def get_geocor(city):
 
 my_city = "Bethesda, Md"
 get_geocor(my_city)
->>>>>>> Stashed changes
+
