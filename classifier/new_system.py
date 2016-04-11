@@ -89,8 +89,13 @@ def sent_system(search_results, text_to_info):
 	print pos_examples
 	print neg
 	print neg_examples
-	pos_percent = (pos/float(pos+neg)) * 100
-	neg_percent = (neg/float(pos+neg)) * 100
+	if (pos + neg > 0):
+		pos_percent = (pos/float(pos+neg)) * 100
+		neg_percent = (neg/float(pos+neg)) * 100
+	else:
+		print "Something went wrong/no tweets were found"
+		pos_percent = 0
+		neg_percent = 0
 	print pos_percent
 	print neg_percent
 	return(pos, neg, pos_examples, neg_examples, pos_percent, neg_percent)
