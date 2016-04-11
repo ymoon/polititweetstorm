@@ -43,7 +43,12 @@
     	<div class="indeterminate"></div>
  	</div>
 
-	
+ 	<form>
+
+ 	<input type="hidden" id="pos_percent" value="{{sentiment_results[4]}}">
+ 	<input type="hidden" id="neg_percent" value="{{sentiment_results[5]}}">
+
+	</form>
 
 <!-- 	<div class="container">
 	    <div id="topics" class="card-panel section scrollspy">
@@ -65,25 +70,18 @@
 <!-- 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E&callback=initMap" type="text/javascript"></script> -->
 
 	<script>
-		
+		console.log(document.getElementById("pos_percent").value);
 		// pie chart data
 		var pieData = [
 			{
-				value: 20,
+				value: document.getElementById("pos_percent").value,
 				color:"#878BB6"
 			},
 			{
-				value : 40,
+				value : document.getElementById("neg_percent").value,
 				color : "#4ACAB4"
 			},
-			{
-				value : 10,
-				color : "#FF8153"
-			},
-			{
-				value : 30,
-				color : "#FFEA88"
-			}
+			
 		];
 
 		// pie chart options
