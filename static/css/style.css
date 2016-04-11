@@ -24,9 +24,18 @@ html,body{
 }
 
 #topbar {
-	height: 70px;
-	padding-bottom: 100px;
+	z-index: 9999;
 }
+
+#navbar {
+	height: 70px;
+
+   	background-color: transparent;
+   	background: transparent;
+   	border-color: transparent;
+}
+
+#navbar li { color: #000 } 
 
 .landing-page-top{
 	height:650px;
@@ -66,7 +75,16 @@ html,body{
 	color:#12c5a2
 }
 
-
+#main {
+	background: url("../images/map2.png");
+	background-size: cover;  // or cover like Ben Dyer states
+	background-repeat: no-repeat;
+	-webkit-filter: blur(2px);
+	-moz-filter: blur(2px);
+	-o-filter: blur(2px);
+	-ms-filter: blur(2px);
+	filter: blur(2px);
+}
 
 
 /*Scroll to Top*/

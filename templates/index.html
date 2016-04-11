@@ -20,7 +20,7 @@
 </head>
 <body>
 	<div class="navbar-fixed" id="topbar">
-		<nav class="blue-grey darken-3">
+		<nav class="blue-grey darken-3" id="navbar">
 			<div class="nav-wrapper container">
 		  		<a href="#" class="brand-logo">polititweetstorm</a>
 		  		<ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -32,82 +32,84 @@
 		</nav>
 	</div>
 
-	<div class="page section scrollspy" id="main">
-		<div class="container center-align landing-page-top ng-scope valign-wrapper">
-		    <div class="center-align landing-page-div">
-		        <h1 class="homeLogo">
-					polititweetstorm
-		        </h1>
-		        <div class="homeText">
-		            <div>
-		                <p>How do people feel</br>about #x in y location?</p>
-		            </div>
-		        </div>
-		        <div class="homeButtons vbtns row">
-		       		<div class="col s12">
-		       			<div class="center-align">
-			                <a class="btn-large btn-rnd waves-effect hero-btn" href="search">Get Started</a>
-			                <a class="btn-large btn-rnd white grey-text hero-btn waves-effect" href="#team">Learn More</a>
+	<div id="outer">
+		<div class="page section scrollspy" id="main">
+			<div class="container center-align landing-page-top ng-scope valign-wrapper">
+			    <div class="center-align landing-page-div">
+			        <h1 class="homeLogo">
+						polititweetstorm
+			        </h1>
+			        <div class="homeText">
+			            <div>
+			                <p>How do people feel</br>about #x in y location?</p>
+			            </div>
+			        </div>
+			        <div class="homeButtons vbtns row">
+			       		<div class="col s12">
+			       			<div class="center-align">
+				                <a class="btn-large btn-rnd waves-effect hero-btn" href="search">Get Started</a>
+				                <a class="btn-large btn-rnd white grey-text hero-btn waves-effect" href="#team">Learn More</a>
+					        </div>
 				        </div>
 			        </div>
-		        </div>
-		    </div>
+			    </div>
+			</div>
 		</div>
-	</div>
 
-	<!-- <div class="page white section scrollspy" id="team">
-		<div class="container">
-			<div class="valign-wrapper center-align">
-				<div class="row">
-			        <div class="col s4">
-			        	<div class="center promo promo-example">
-				            <i class="material-icons">flash_on</i>
-				            <p class="promo-caption">Speeds up development</p>
-				            <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
-			          	</div>
-			        </div>
-			        <div class="col s4">
-			          	<div class="center promo promo-example">
-				            <i class="material-icons">group</i>
-				            <p class="promo-caption">User Experience Focused</p>
-				            <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
-			          	</div>
-			        </div>
-			        <div class="col s4">
-			          	<div class="center promo promo-example">
-				            <i class="material-icons">settings</i>
-				            <p class="promo-caption">Easy to work with</p>
-				            <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
-			          	</div>
-			        </div>
+		<!-- <div class="page white section scrollspy" id="team">
+			<div class="container">
+				<div class="valign-wrapper center-align">
+					<div class="row">
+				        <div class="col s4">
+				        	<div class="center promo promo-example">
+					            <i class="material-icons">flash_on</i>
+					            <p class="promo-caption">Speeds up development</p>
+					            <p class="light center">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components.</p>
+				          	</div>
+				        </div>
+				        <div class="col s4">
+				          	<div class="center promo promo-example">
+					            <i class="material-icons">group</i>
+					            <p class="promo-caption">User Experience Focused</p>
+					            <p class="light center">By utilizing elements and principles of Material Design, we were able to create a framework that focuses on User Experience.</p>
+				          	</div>
+				        </div>
+				        <div class="col s4">
+				          	<div class="center promo promo-example">
+					            <i class="material-icons">settings</i>
+					            <p class="promo-caption">Easy to work with</p>
+					            <p class="light center">We have provided detailed documentation as well as specific code examples to help new users get started.</p>
+				          	</div>
+				        </div>
+				  	</div>
 			  	</div>
 		  	</div>
-	  	</div>
-	</div> -->
+		</div> -->
 
-	<div class="page white section scrollspy" id="team">
-		<div class="container center-align valign-wrapper">
-			<div class="row section">
-				<h3 class="header light">Principles</h3>
-			  	<div class="col s12 l4">
-				    <img class="promo" src="images/metaphor.png">
-				    <h4 class="center">Material is the metaphor</h4>
-				    <p class="light">The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world.</p>
-			    	<br>
-			  	</div>
+		<div class="page white section scrollspy" id="team">
+			<div class="container center-align valign-wrapper">
+				<div class="row section">
+					<h3 class="header light">Principles</h3>
+				  	<div class="col s12 l4">
+					    <img class="promo" src="images/metaphor.png">
+					    <h4 class="center">Material is the metaphor</h4>
+					    <p class="light">The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world.</p>
+				    	<br>
+				  	</div>
 
-			  	<div class="col s12 l4">
-				    <img class="promo" src="images/bold.png">
-				    <h4 class="center">Bold, graphic, intentional</h4>
-				    <p class="light">Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users.</p>
-				    <br>
-			  	</div>
+				  	<div class="col s12 l4">
+					    <img class="promo" src="images/bold.png">
+					    <h4 class="center">Bold, graphic, intentional</h4>
+					    <p class="light">Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users.</p>
+					    <br>
+				  	</div>
 
-			  	<div class="col s12 l4">
-				    <img class="promo" src="images/motion.png">
-				    <h4 class="center">Motion provides meaning</h4>
-				    <p class="light">Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations.</p>
-			  	</div>
+				  	<div class="col s12 l4">
+					    <img class="promo" src="images/motion.png">
+					    <h4 class="center">Motion provides meaning</h4>
+					    <p class="light">Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations.</p>
+				  	</div>
+				</div>
 			</div>
 		</div>
 	</div>
