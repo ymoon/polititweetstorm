@@ -79,11 +79,11 @@ html,body{
 	background: url("../images/map2.png");
 	background-size: cover;  // or cover like Ben Dyer states
 	background-repeat: no-repeat;
-	-webkit-filter: blur(2px);
+/*	-webkit-filter: blur(2px);
 	-moz-filter: blur(2px);
 	-o-filter: blur(2px);
 	-ms-filter: blur(2px);
-	filter: blur(2px);
+	filter: blur(2px);*/
 }
 
 
