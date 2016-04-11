@@ -1,5 +1,4 @@
 from flask import *
-from extensions import mysql
 
 main = Blueprint('main', __name__, template_folder='templates')
 

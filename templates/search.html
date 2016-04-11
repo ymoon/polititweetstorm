@@ -36,12 +36,15 @@
 	<div class="container">
 	    <div id="topics" class="card-panel section scrollspy">
 	    	<h5 class="header">Select a trending topic<i class="material-icons">trending_up</i> and locaiton</h5>
-	    	<form action="/search" method= "POST" enctype="multipart/form-data">
+	    	<form action="" method= "POST" enctype="multipart/form-data">
 	    		Please enter a city, state:<br>
 	    		<input id = 'pac-input' type="text" name="location"><br>
 
 	    		{% for topic in topics %}
-				<input type="radio" name="topic">{{topic}}<br>
+				<p>
+      			<input name="topic" type="radio" id="test1" value="{{topic}}" />
+      			<label for="test1">{{topic}}</label>
+    			</p>
 	    		{% endfor %}
 	    		<input type="submit" value="Submit">
 	    	</form>

@@ -1,5 +1,5 @@
 from flask import *
-from extensions import mysql
+
 
 
 dani = "https://api.twitter.com/1.1/trends/place.json?id=1"
