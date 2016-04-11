@@ -1,6 +1,6 @@
 from flask import *
 import classifier.get_tweets as gt
-import classifier.naive_system as ns
+import classifier.new_system as ns
 import classifier.topic_search as ts
 import googlemaps
 # import classifier.naive_training as nt
