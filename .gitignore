@@ -5,8 +5,6 @@ vagrant.sh
 *.pyc
 .DS_Store
 Vagrantfile
-static/images
-static/images/*
 *.pdf
 *.docx
 *.doc
