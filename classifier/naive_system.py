@@ -1,4 +1,3 @@
-from nltk import FreqDist as fd
 from nltk.tokenize import word_tokenize
 import nltk
 import json

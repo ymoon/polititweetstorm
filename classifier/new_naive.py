@@ -1,6 +1,6 @@
 import pandas
 #from nltk.classify import NaiveBayesClassifier as NBC
-from nltk import FreqDist as fd
+
 from nltk.tokenize import word_tokenize
 import nltk
 import json
@@ -57,12 +57,6 @@ for df in pandas.read_csv(input, chunksize=1):
             word_probs[sent][t] = word_probs[sent].get(t, 0) + 1
 
 
-
-#once done, get intersection of tokens to get vocab size
-keys_neg = set(word_probs["neg"].keys())
-keys_post = set(word_probs["pos"].keys())
-vocab = keys_neg & keys_post
-vocab_size = len(vocab)
 
 dictionaries = []
 
