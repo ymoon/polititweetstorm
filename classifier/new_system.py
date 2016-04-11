@@ -59,7 +59,7 @@ def sent_system(search_results, text_to_info):
 			for to in tokens:
 				t = to.lower()
 				#sum of log (# of times word appears in pos/neg tweets +  1/ total words in pos/neg tweets + vocab size)
-				sent_probs[sentiment] = math.log(float(class_probs.get(sentiment, 0) + 1) / float(total_tweets + vocab_size - 1))
+				sent_probs[sentiment] = sent_probs.get(sentiment, 0) + math.log(float(word_probs[sentiment].get(t, 0) + 1) /float((cateogry_size[sentiment]) + vocab_size))
 
 		#add log of class probs with smoothing to previous sums
 		for sentiment in class_probs:
