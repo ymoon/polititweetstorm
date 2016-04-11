@@ -1,5 +1,8 @@
 body {
-	background-color: #f9f9f9;
+	background: url("../images/map2.png");
+	background-size: cover;  // or cover like Ben Dyer states
+	background-repeat: no-repeat;
+
 }
 
 html,body{
@@ -21,10 +24,6 @@ html,body{
 
 #topics {
 	background-color: #f9f9f9;
-}
-
-#topbar {
-	z-index: 9999;
 }
 
 #navbar {
