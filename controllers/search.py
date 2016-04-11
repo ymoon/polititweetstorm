@@ -3,6 +3,7 @@ import classifier.get_tweets as gt
 import classifier.new_system as ns
 import classifier.topic_search as ts
 import googlemaps
+import json
 # import classifier.naive_training as nt
 
 
@@ -60,7 +61,7 @@ def search_route():
 		# for tweet in relevent_tweets:
 		# 	print tweet
 		# 	print '\n'
-		print text_to_info
+		# sprint text_to_info
 		sentiment_results = ns.sent_system(relevent_tweets, text_to_info)
 		
 		return render_template("results.html", sentiment_results = sentiment_results)

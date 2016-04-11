@@ -85,10 +85,15 @@ def sent_system(search_results, text_to_info):
 	for x in neg_examples:
 		x = text_to_info[x]
 
-	# print pos
-	# print neg
-
-	return(pos, neg, pos_examples, neg_examples)
+	print pos
+	print pos_examples
+	print neg
+	print neg_examples
+	pos_percent = (pos/float(pos+neg)) * 100
+	neg_percent = (neg/float(pos+neg)) * 100
+	print pos_percent
+	print neg_percent
+	return(pos, neg, pos_examples, neg_examples, pos_percent, neg_percent)
 
 
 # def main():
