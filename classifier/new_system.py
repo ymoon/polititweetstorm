@@ -19,7 +19,7 @@ def sent_system(search_results, text_to_info):
 	pos = 0
 	neg = 0
 
-	with open("training_information.json", 'r') as ti:
+	with open("classifier/training_information.json", 'r') as ti:
 		training = json.load(ti)
 
 	#parse dictionaries from training
