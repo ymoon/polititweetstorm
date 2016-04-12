@@ -1,4 +1,5 @@
 body {
+	background: (rgb(10,97,100), rgb(2,37,56));
 	background: -webkit-linear-gradient(rgb(10,97,100), rgb(2,37,56)); /* For Safari 5.1 to 6.0 */
     background: -o-linear-gradient(rgb(10,97,100), rgb(2,37,56)); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(rgb(10,97,100), rgb(2,37,56)); /* For Firefox 3.6 to 15 */
@@ -7,7 +8,6 @@ body {
 }
 
 html,body{
-	height: 100%;
 	width:100% !important; 
 	margin:0px; 
 	padding:0px;
@@ -113,4 +113,10 @@ html,body{
 
 #map {
 	height: 100%
+}
+
+
+
+.brand-logo{
+	letter-spacing: 1.5px;
 }

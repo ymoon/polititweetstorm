@@ -30,12 +30,19 @@
 
 	<div class="container">
 
-		<div class="card-panel center-align">
-			<h5 class="header">Search Results For: <b>{{topic[0]}} {{topic[1]}}</b> in {{location}}</h5>
+		<div id = "grey_card" class="card-panel center-align">
+			<h5 class ="header"><b>{{location}}</b> feels 
+				{%if sentiment_results[0] > sentiment_results[1] %}
+				<span style="color: #4ACAB4"><b>positivley</b></span>
+				{% else %}
+				<span style="color: #878BB6"><b>negitviely</b></span>
+				{% endif %}
+				about <b>{{topic[0]}} {{topic[1]}}</b></h5>
+			<!-- <h5 class="header">Search Results For: <b>{{topic[0]}} {{topic[1]}}</b> in {{location}}</h5> -->
 
-			<div class="card-panel center-align">
-				<h6 class="left-align"><font color="#878BB6">Positive Tweets: {{sentiment_results[0]}}</font></h6>
-				<h6 class="left-align"><font color="#4ACAB4">Negative Tweets: {{sentiment_results[1]}}</font></h6>
+			<div id = "grey_card2" class="card-panel center-align">
+				<h6 class="left-align"><font color="#4ACAB4">Positive Tweets: {{sentiment_results[0]}}</font></h6>
+				<h6 class="left-align"><font color="#878BB6">Negative Tweets: {{sentiment_results[1]}}</font></h6>
 				<!-- pie chart canvas element -->
 				<div id="legendDiv"></div>
 				<div class="valign" style="margin: auto"><canvas id="countries" width="600" height="300" style="width: 600px; height: 300px;"></canvas></div>
@@ -43,7 +50,7 @@
 
 					<div class="left-align col s6">
 				    	{%for tweet in sentiment_results[2]%}
-				    	<font color="#878BB6">
+				    	<font color="#4ACAB4">
 				    	<p class="header"><b>@{{tweet[2]}}:</b></p>
 				    	<p>{{tweet[0]}}</p>
 				    	<p>{{tweet[1]}}</p>
@@ -53,7 +60,7 @@
 				    </div>
 				    <div class="left-align col s6">
 				    	{%for tweet in sentiment_results[3]%}
-				    	<font color="#4ACAB4">
+				    	<font color="#878BB6">
 				    	<p class="header"><b>@{{tweet[2]}}:</b></p>
 				    	<p>{{tweet[0]}}</p>
 				    	<p>{{tweet[1]}}</p>
@@ -95,11 +102,11 @@
 		var pieData = [
 			{
 				value: document.getElementById("pos_percent").value,
-				color:"#878BB6"
+				color:"#4ACAB4"
 			},
 			{
 				value : document.getElementById("neg_percent").value,
-				color : "#4ACAB4"
+				color : "#878BB6"
 			},
 			
 		];

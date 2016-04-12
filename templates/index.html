@@ -19,7 +19,8 @@
 	<meta charset="utf-8">
 </head>
 <body>
-	<div class="navbar-fixed" id="topbar">
+	<div class = "landbod">
+<!-- 	<div class="navbar-fixed" id="topbar">
 		<nav id="topbar">
 			<div class="nav-wrapper container">
 		  		<a href="{{url_for('main.main_route')}}" class="brand-logo">polititweetstorm</a>
@@ -29,7 +30,7 @@
 			</div>
 		</nav>
 	</div>
-
+ -->
 	<div id="outer">
 		<div id="background-image"></div>
 		<div class="page section scrollspy" id="main content">
@@ -40,14 +41,14 @@
 			        </h1>
 			        <div class="homeText">
 			            <div>
-			                <p>How do people feel</br>about #x in y location?</p>
+			                <p>discover the political sentiment of any location</p>
 			            </div>
 			        </div>
 			        <div class="homeButtons vbtns row">
 			       		<div class="col s12">
 			       			<div class="center-align">
 				                <a class="btn-large btn-rnd waves-effect hero-btn" href="{{url_for('search.search_route')}}">Get Started</a>
-				                <a class="btn-large btn-rnd white grey-text hero-btn waves-effect" href="#">Learn More</a>
+				                <a class="btn-large btn-rnd white grey-text hero-btn waves-effect" href="#bio_header">Learn More</a>
 					        </div>
 				        </div>
 			        </div>
@@ -88,25 +89,30 @@
 		<div class="page white section scrollspy" id="team">
 			<div class="container center-align valign-wrapper">
 				<div class="row section">
-					<h3 class="header light">Principles</h3>
-				  	<div class="col s12 l4">
-					    <img class="promo" src="images/metaphor.png">
-					    <h4 class="center">Material is the metaphor</h4>
-					    <p class="light">The metaphor of material defines the relationship between space and motion. The idea is that the technology is inspired by paper and ink and is utilized to facilitate creativity and innovation. Surfaces and edges provide familiar visual cues that allow users to quickly understand the technology beyond the physical world.</p>
+					<h3 id = "bio_header" class="header light">The Storm Trackers</h3>
+				  	<div class="col s12 l3">
+					    <img class="promo" src="../static/images/dani.jpeg">
+					    <h4 class="center">Danielle Livneh</h4>
+					    <p class="light">Our token female hails from the School of Information and loves doing the crossword and playing IM volleyball with her team, Pizza Sqaud</p>
 				    	<br>
 				  	</div>
 
-				  	<div class="col s12 l4">
-					    <img class="promo" src="images/bold.png">
-					    <h4 class="center">Bold, graphic, intentional</h4>
-					    <p class="light">Elements and components such as grids, typography, color, and imagery are not only visually pleasing, but also create a sense of hierarchy, meaning, and focus. Emphasis on different actions and components create a visual guide for users.</p>
+				  	<div class="col s12 l3">
+					    <img class="promo" src="../static/images/aren.jpeg">
+					    <h4 class="center">Aren Vogel</h4>
+					    <p class="light">Evidently pees in Skeeps</p>
 					    <br>
 				  	</div>
 
-				  	<div class="col s12 l4">
-					    <img class="promo" src="images/motion.png">
-					    <h4 class="center">Motion provides meaning</h4>
-					    <p class="light">Motion allows the user to draw a parallel between what they see on the screen and in real life. By providing both feedback and familiarity, this allows the user to fully immerse him or herself into unfamiliar technology. Motion contains consistency and continuity in addition to giving users additional subconscious information about objects and transformations.</p>
+				  	<div class="col s12 l3">
+					    <img class="promo" src="../static/images/john.jpeg">
+					    <h4 class="center">John Moon</h4>
+					    <p class="light">Resident design pro who is obsessed with materalzie and loves keeping up to date with all the latest tech trends. John also speaks a million languages</p>
+				  	</div>
+				  	<div class="col s12 l3">
+					    <img class="promo" src="../static/images/mat.jpeg">
+					    <h4 class="center">Mat Wiesman</h4>
+					    <p class="light">The hispter representitive studying linguistics and computer science. Mat is from Nebraska(???)</p>
 				  	</div>
 				</div>
 			</div>
@@ -127,6 +133,7 @@
 
 	<script type="text/javascript" src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
 	<script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>
+</div>
 </body>
 
 </html>

@@ -6,6 +6,14 @@ body {
 	background-size: cover;  // or cover like Ben Dyer states
 }
 
+
+.landbod{
+	background-image: url("../images/map.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+
 html,body{
 	width:100% !important; 
 	margin:0px; 
@@ -27,7 +35,7 @@ html,body{
 }
 
 #topbar {
-	background-color: rgb(2,37,56);
+	background-color: rgb(5,59,72);
 }
 
 #navbar {
@@ -54,12 +62,17 @@ html,body{
 .homeLogo{
 	margin:80px 0 0;
 	color:#12c5a2;
-	line-height:3rem
+	line-height:3rem;
+	letter-spacing: 2px;
+	padding-bottom: 25px;
+
 }
 
 .homeText{
 	margin-top:20px;
-	color:#7f7f7f
+	color: #ffffff;
+	font-size: 18px;
+	letter-spacing: 1px;
 }
 
 .homeText p{
@@ -76,17 +89,6 @@ html,body{
 
 .font-green{
 	color:#12c5a2
-}
-
-#main {
-	background: url("../images/map2.png");
-	background-size: cover;  // or cover like Ben Dyer states
-	background-repeat: no-repeat;
-/*	-webkit-filter: blur(2px);
-	-moz-filter: blur(2px);
-	-o-filter: blur(2px);
-	-ms-filter: blur(2px);
-	filter: blur(2px);*/
 }
 
 
@@ -113,3 +115,24 @@ html,body{
 #map {
 	height: 100%
 }
+
+
+
+
+#grey_card{
+	background-color: #F0F0F0;
+}
+
+#grey_card2{
+	background-color: #F0F0F0;
+}
+
+#bio_header{
+
+	padding-bottom: 20px;
+}
+
+.brand-logo{
+	letter-spacing: 1.5px;
+}
+
