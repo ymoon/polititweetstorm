@@ -20,13 +20,11 @@
 </head>
 <body>
 	<div class="navbar-fixed" id="topbar">
-		<nav class="blue-grey darken-3" id="navbar">
+		<nav id="topbar">
 			<div class="nav-wrapper container">
-		  		<a href="#" class="brand-logo">polititweetstorm</a>
+		  		<a href="{{url_for('main.main_route')}}" class="brand-logo">polititweetstorm</a>
 		  		<ul id="nav-mobile" class="right hide-on-med-and-down">
-			        <li><a href="#main"><i class="material-icons">home</i></a></li>
-			        <li><a href="#team">Team</a></li>
-			        <li><a href="#code">Search</a></li>
+			        <li><a href="{{url_for('search.search_route')}}"><i class="material-icons">search</i></a></li>
 		  		</ul>
 			</div>
 		</nav>
@@ -48,8 +46,8 @@
 			        <div class="homeButtons vbtns row">
 			       		<div class="col s12">
 			       			<div class="center-align">
-				                <a class="btn-large btn-rnd waves-effect hero-btn" href="search">Get Started</a>
-				                <a class="btn-large btn-rnd white grey-text hero-btn waves-effect" href="#team">Learn More</a>
+				                <a class="btn-large btn-rnd waves-effect hero-btn" href="{{url_for('search.search_route')}}">Get Started</a>
+				                <a class="btn-large btn-rnd white grey-text hero-btn waves-effect" href="#">Learn More</a>
 					        </div>
 				        </div>
 			        </div>

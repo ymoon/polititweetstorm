@@ -7,7 +7,7 @@
 
 	<!--Import materialize.css-->
   	<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}" media="screen,projection"/>
-	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/search.css')}}" />
 	<link rel="stylesheet" href="{{url_for('static', filename='css/landing.css')}}" />
 
 
@@ -20,13 +20,11 @@
 </head>
 <body>
 	<div class="navbar-fixed" id="topbar">
-		<nav class="blue-grey darken-3">
+		<nav id="topbar">
 			<div class="nav-wrapper container">
-		  		<a href="#" class="brand-logo">polititweetstorm</a>
+		  		<a href="{{url_for('main.main_route')}}" class="brand-logo">polititweetstorm</a>
 		  		<ul id="nav-mobile" class="right hide-on-med-and-down">
-			        <li><a href="#main"><i class="material-icons">home</i></a></li>
-			        <li><a href="#team">Team</a></li>
-			        <li><a href="#code">Search</a></li>
+			        <li><a href="{{url_for('search.search_route')}}"><i class="material-icons">search</i></a></li>
 		  		</ul>
 			</div>
 		</nav>
@@ -35,7 +33,7 @@
 
 	<div class="container">
 	    <div id="topics" class="card-panel section scrollspy">
-	    	<h5 class="header blue-grey-text text-darken-4">Select a trending topic<i class="material-icons">trending_up</i> and location</h5>
+	    	<h5 class="header blue-grey-text text-darken-4">search</h5>
 
 <!-- 			<div class="row">
 				<form action="" method= "POST" enctype="multipart/form-data" class="col s12">
@@ -49,26 +47,31 @@
 				</form>
 			</div> -->
 	    	<form action="" method= "POST" enctype="multipart/form-data">
-	    		Please enter a city, state:<br>
-	    		<input id = 'pac-input' type="text" name="location"><br>
-
-	    		{% for topic in topics %}
-				<p>
-      			<input name="topic" type="radio" id="test_{{topic}}" value="{{topic}}" />
-      			<label for="test_{{topic}}">{{topic}}</label>
-    			</p>
-	    		{% endfor %}
+	    		<div class="section">
+		    		<h8>Enter a location:</h8>
+		    		<input id = 'pac-input' type="text" name="location">
+		    	</div>
+		    	<div class="section">
+					Select a trending topic <i class="material-icons">trending_up</i>
+		    		{% for topic in topics %}
+					<p>
+	      			<input name="topic" type="radio" id="test_{{topic}}" value="{{topic}}" />
+	      			<label for="test_{{topic}}">{{topic}}</label>
+	    			</p>
+		    		{% endfor %}
+				</div>
+	    		
 	    		<!-- <input type="submit" value="Submit"> -->
-	    		<button class="btn waves-effect waves-light" type="submit" value="Submit" name="action">Submit
+	    		<button class="btn waves-effect waves-light" id="submit" type="submit" value="Submit" name="action">Submit
     				<i class="material-icons right">send</i>
   				</button>
 	    	</form>
 	    </div>
-	    <div id="map" class="section scrollspy">
-	    	
-	    </div>
 	</div>
 
+	<div class="progress" id="progress" style="display: none; position: absolute; bottom: 0; margin: 0px auto 20px auto">
+    	<div class="indeterminate"></div>
+ 	</div>
     
   	<!-- Google Maps API -->
 	<!--   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E&callback=initMap"
