@@ -11,7 +11,6 @@ body {
 	background-image: url("../images/map.png");
 	background-size: cover;
 	background-repeat: no-repeat;
-
 }
 
 html,body{
@@ -20,7 +19,7 @@ html,body{
 	padding:0px;
 }
 
-/*.outer {
+.outer {
 	height: 200% !important; 
 	width: 100% !important;
 }
@@ -28,7 +27,7 @@ html,body{
 .page {
 	height:50% !important; 
 	width:100% !important;
-}*/
+}
 
 #topics {
 	background-color: #f9f9f9;
@@ -115,8 +114,6 @@ html,body{
 #map {
 	height: 100%
 }
-
-
 
 
 #grey_card{
