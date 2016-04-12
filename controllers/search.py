@@ -30,12 +30,12 @@ def search_route():
 		print "test"
 		text_to_info = {}
 		topic = request.form.get("topic")
-		location = request.form.get("location")
-		print location
+		location1 = request.form.get("location")
+		print location1
 		print topic
 		relevent_tweets = set()
-		if topic and location: #requests/search has been sent - run it and load the results page
-			location = get_geocor(location) #get lat and lng of city
+		if topic and location1: #requests/search has been sent - run it and load the results page
+			location = get_geocor(location1) #get lat and lng of city
 			print location
 			search_results = gt.grab_tweets(topic, location)
 			for x in search_results["statuses"]:
@@ -64,7 +64,7 @@ def search_route():
 		# sprint text_to_info
 		sentiment_results = ns.sent_system(relevent_tweets, text_to_info)
 		
-		return render_template("results.html", sentiment_results = sentiment_results)
+		return render_template("results.html", sentiment_results = sentiment_results, topic = topic, location = location1)
 	else: #the normal search page display trending topics
 		topics = ts.get_top_topics()
 		return render_template("search.html", initialize=True, topics = topics)
