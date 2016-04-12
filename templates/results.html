@@ -33,7 +33,12 @@
 	<div class="container">
 
 		<div class="card-panel center-align">
-			<h5 class="header">Search Results</h5>
+			<h5 class="header">Search Results For: <b>{{topic[0]}} {{topic[1]}}</b> in {{location}}</h5>
+
+		<div class="card-panel left-align">
+			<h5 class="header">Chart Key:</h5>
+			<h6><font color="#878BB6">Positive Tweets: {{sentiment_results[0]}}</h6>
+			<h6><font color="#4ACAB4">Negative Tweets: {{sentiment_results[1]}}</h6>
 			<!-- pie chart canvas element -->
 			<div class="valign" style="margin: auto"><canvas id="countries" width="600" height="300" style="width: 600px; height: 300px;"></canvas></div>
 		</div>
