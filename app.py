@@ -12,6 +12,7 @@ app.register_blueprint(controllers.twitter_api, url_prefix='/polititweetstorm', 
 app.register_blueprint(controllers.main, url_prefix='/polititweetstorm', static_url_path="static")
 app.register_blueprint(controllers.search, url_prefix='/polititweetstorm', static_url_path="static")
 app.register_blueprint(controllers.results, url_prefix='/polititweetstorm', static_url_path="static")
+app.register_blueprint(controllers.dani, url_prefix='/polititweetstorm', static_url_path="static")
 
 # Listen on external IPs
 # For us, listen to port 3000 so you can just run 'python app.py' to start the server
