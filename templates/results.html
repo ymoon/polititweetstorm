@@ -37,6 +37,7 @@
 				<h6 class="left-align"><font color="#878BB6">Positive Tweets: {{sentiment_results[0]}}</font></h6>
 				<h6 class="left-align"><font color="#4ACAB4">Negative Tweets: {{sentiment_results[1]}}</font></h6>
 				<!-- pie chart canvas element -->
+				<div id="legendDiv"></div>
 				<div class="valign" style="margin: auto"><canvas id="countries" width="600" height="300" style="width: 600px; height: 300px;"></canvas></div>
 				<div class = "row">
 
@@ -115,8 +116,9 @@
 		var countries= document.getElementById("countries").getContext("2d");
 		
 		// draw pie chart
-		new Chart(countries).Pie(pieData, pieOptions);
-		
+		var pieChart = new Chart(countries).Pie(pieData, pieOptions);
+		var legend = pieChart.generateLegend();
+		document.getElementById("legendDiv").append(legend);
 	</script>
 
 

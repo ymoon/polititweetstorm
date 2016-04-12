@@ -40,15 +40,15 @@
 				<div class="col s6 valign">
 			    	<form action="" method= "POST" enctype="multipart/form-data">
 			    		<div class="section">
-				    		<h8>Enter a location:</h8>
+				    		<h7>Enter a location <i class="material-icons">location_searching</i></h7>
 				    		<input id = 'pac-input' type="text" name="location">
 				    	</div>
 				    	<div class="section">
-							Select a trending topic <i class="material-icons">trending_up</i>
+							<h7>Select a trending topic <i class="material-icons">trending_up</i></h7>
 				    		{% for topic in topics %}
 							<p>
 			      			<input name="topic" type="radio" id="test_{{topic}}" value="{{topic}}" />
-			      			<label for="test_{{topic}}">{{topic}}</label>
+			      			<label for="test_{{topic}}" class="blue-grey-text text-darken-4">{{topic}}</label>
 			    			</p>
 				    		{% endfor %}
 						</div>
@@ -63,7 +63,7 @@
 	    </div>
 	</div>
 
-	<div class="progress" id="progress" style="display: none; position: absolute; bottom: 0; margin: 0px auto 20px auto">
+	<div class="progress" id="progress" style="display: none; position: absolute; bottom: 0; margin: 0px auto 35x auto">
     	<div class="indeterminate"></div>
  	</div>
     
