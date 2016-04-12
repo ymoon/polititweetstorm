@@ -33,7 +33,12 @@
 	<div class="container">
 
 		<div class="card-panel center-align">
-			<h5 class="header">Search Results</h5>
+			<h5 class="header">Search Results For: <b>{{topic[0]}} {{topic[1]}}</b> in {{location}}</h5>
+
+		<div class="card-panel left-align">
+			<h5 class="header">Chart Key:</h5>
+			<h6><font color="#878BB6">Positive Tweets: {{sentiment_results[0]}}</h6>
+			<h6><font color="#4ACAB4">Negative Tweets: {{sentiment_results[1]}}</h6>
 			<!-- pie chart canvas element -->
 			<div class="valign" style="margin: auto"><canvas id="countries" width="600" height="300" style="width: 600px; height: 300px;"></canvas></div>
 		</div>
@@ -43,7 +48,12 @@
     	<div class="indeterminate"></div>
  	</div>
 
-	
+ 	<form>
+
+ 	<input type="hidden" id="pos_percent" value="{{sentiment_results[4]}}">
+ 	<input type="hidden" id="neg_percent" value="{{sentiment_results[5]}}">
+
+	</form>
 
 <!-- 	<div class="container">
 	    <div id="topics" class="card-panel section scrollspy">
@@ -65,25 +75,18 @@
 <!-- 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E&callback=initMap" type="text/javascript"></script> -->
 
 	<script>
-		
+		console.log(document.getElementById("pos_percent").value);
 		// pie chart data
 		var pieData = [
 			{
-				value: 20,
+				value: document.getElementById("pos_percent").value,
 				color:"#878BB6"
 			},
 			{
-				value : 40,
+				value : document.getElementById("neg_percent").value,
 				color : "#4ACAB4"
 			},
-			{
-				value : 10,
-				color : "#FF8153"
-			},
-			{
-				value : 30,
-				color : "#FFEA88"
-			}
+			
 		];
 
 		// pie chart options
