@@ -80,11 +80,10 @@ def sent_system(search_results, text_to_info):
 
 
 	#creates a list for of json objects of tweets of negative and positive examples
-	for x in pos_examples:
-		x = text_to_info[x]
-	for x in neg_examples:
-		x = text_to_info[x]
-
+	for i in range(len(pos_examples)):
+		pos_examples[i] = text_to_info[pos_examples[i]]
+	for i in range(len(neg_examples)):
+		neg_examples[i] = text_to_info[neg_examples[i]]
 	print pos
 	print pos_examples
 	print neg

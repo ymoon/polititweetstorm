@@ -40,7 +40,7 @@ def search_route():
 			search_results = gt.grab_tweets(topic, location)
 			for x in search_results["statuses"]:
 				sentance = x["text"]
-				text_to_info[sentance] = (x["created_at"], x["user"]["screen_name"])
+				text_to_info[sentance] = (sentance, x["created_at"], x["user"]["screen_name"])
 				relevent_tweets.add(sentance)
 			# if it is a bigram
 			topic = topic.split()
@@ -48,13 +48,13 @@ def search_route():
 				search_results2 = gt.grab_tweets(topic[0], location)
 				for x in search_results2["statuses"]:
 					sentance = x["text"]
-					text_to_info[sentance] = (x["created_at"], x["user"]["screen_name"])
+					text_to_info[sentance] = (sentance, x["created_at"], x["user"]["screen_name"])
 					relevent_tweets.add(sentance)
 
 				search_results3 = gt.grab_tweets(topic[1], location)
 				for x in search_results3["statuses"]:
 					sentance = x["text"]
-					text_to_info[sentance] = (x["created_at"], x["user"]["screen_name"])
+					text_to_info[sentance] = (sentance, x["created_at"], x["user"]["screen_name"])
 					relevent_tweets.add(sentance)
 
 		# for testing and accuracy calculations

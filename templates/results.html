@@ -41,6 +41,28 @@
 			<h6><font color="#4ACAB4">Negative Tweets: {{sentiment_results[1]}}</h6>
 			<!-- pie chart canvas element -->
 			<div class="valign" style="margin: auto"><canvas id="countries" width="600" height="300" style="width: 600px; height: 300px;"></canvas></div>
+		<div class = "row">
+
+		<div class="left-align col s6">
+	    	{%for tweet in sentiment_results[2]%}
+	    	<font color="#878BB6">
+	    	<p class="header"><b>@{{tweet[2]}}:</b></p>
+	    	<p>{{tweet[0]}}</p>
+	    	<p>{{tweet[1]}}</p>
+	    	</font>
+
+	    	{% endfor %}
+	    </div>
+	    <div class="left-align col s6">
+	    	{%for tweet in sentiment_results[3]%}
+	    	<font color="#4ACAB4">
+	    	<p class="header"><b>@{{tweet[2]}}:</b></p>
+	    	<p>{{tweet[0]}}</p>
+	    	<p>{{tweet[1]}}</p>
+	    	</font>
+	    	{% endfor %}
+	    </div>
+		</div>
 		</div>
 	</div>
 
