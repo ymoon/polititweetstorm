@@ -7,7 +7,7 @@ body {
 }
 
 html,body{
-	height: 0;
+	height: 100%;
 	width:100% !important; 
 	margin:0px; 
 	padding:0px;
@@ -24,11 +24,11 @@ html,body{
 }*/
 
 #topics {
-	background-color: #f9f9f9;
+	background-color: #E8E8E8;
 }
 
 #topbar {
-	background-color: rgb(2,37,56);
+	background-color: rgb(5,59,72);
 }
 
 #navbar {
