@@ -33,39 +33,33 @@
 
 	<div class="container">
 	    <div id="topics" class="card-panel section scrollspy">
-	    	<h5 class="header blue-grey-text text-darken-4">search</h5>
-
-<!-- 			<div class="row">
-				<form action="" method= "POST" enctype="multipart/form-data" class="col s12">
-					<div class="row">
-						<div class="input-field col s12">
-							<i class="material-icons prefix">location_searching</i>
-							<input id="icon_prefix pac-input" type="text" name="location" class="validate">
-							<label for="icon_prefix">Location</label>
-						</div>
-					</div>
-				</form>
-			</div> -->
-	    	<form action="" method= "POST" enctype="multipart/form-data">
-	    		<div class="section">
-		    		<h8>Enter a location:</h8>
-		    		<input id = 'pac-input' type="text" name="location">
-		    	</div>
-		    	<div class="section">
-					Select a trending topic <i class="material-icons">trending_up</i>
-		    		{% for topic in topics %}
-					<p>
-	      			<input name="topic" type="radio" id="test_{{topic}}" value="{{topic}}" />
-	      			<label for="test_{{topic}}">{{topic}}</label>
-	    			</p>
-		    		{% endfor %}
+			<div class="row valign-wrapper">    	
+				<div class="col s6 valign center-align">
+		    		<h2 class="header blue-grey-text text-darken-4"><i class="material-icons">search</i> Search</h2>
 				</div>
-	    		
-	    		<!-- <input type="submit" value="Submit"> -->
-	    		<button class="btn waves-effect waves-light" id="submit" type="submit" value="Submit" name="action">Submit
-    				<i class="material-icons right">send</i>
-  				</button>
-	    	</form>
+				<div class="col s6 valign">
+			    	<form action="" method= "POST" enctype="multipart/form-data">
+			    		<div class="section">
+				    		<h8>Enter a location:</h8>
+				    		<input id = 'pac-input' type="text" name="location">
+				    	</div>
+				    	<div class="section">
+							Select a trending topic <i class="material-icons">trending_up</i>
+				    		{% for topic in topics %}
+							<p>
+			      			<input name="topic" type="radio" id="test_{{topic}}" value="{{topic}}" />
+			      			<label for="test_{{topic}}">{{topic}}</label>
+			    			</p>
+				    		{% endfor %}
+						</div>
+			    		<br>
+			    		<!-- <input type="submit" value="Submit"> -->
+			    		<button class="btn waves-effect waves-light" id="submit" type="submit" value="Submit" name="action">Submit
+		    				<i class="material-icons right">send</i>
+		  				</button>
+			    	</form>
+			    </div>
+		    </div>
 	    </div>
 	</div>
 
