@@ -7,6 +7,7 @@ body {
 }
 
 html,body{
+	height: 0;
 	width:100% !important; 
 	margin:0px; 
 	padding:0px;

@@ -18,13 +18,11 @@
 </head>
 <body>
 	<div class="navbar-fixed" id="topbar">
-		<nav class="blue-grey darken-3">
+		<nav id="topbar">
 			<div class="nav-wrapper container">
-		  		<a href="#" class="brand-logo">polititweetstorm</a>
+		  		<a href="{{url_for('main.main_route')}}" class="brand-logo">polititweetstorm</a>
 		  		<ul id="nav-mobile" class="right hide-on-med-and-down">
-			        <li><a href="#main"><i class="material-icons">home</i></a></li>
-			        <li><a href="#team">Team</a></li>
-			        <li><a href="#code">Search</a></li>
+			        <li><a href="{{url_for('search.search_route')}}"><i class="material-icons">search</i></a></li>
 		  		</ul>
 			</div>
 		</nav>
@@ -35,46 +33,40 @@
 		<div class="card-panel center-align">
 			<h5 class="header">Search Results For: <b>{{topic[0]}} {{topic[1]}}</b> in {{location}}</h5>
 
-		<div class="card-panel left-align">
-			<h5 class="header">Chart Key:</h5>
-			<h6><font color="#878BB6">Positive Tweets: {{sentiment_results[0]}}</h6>
-			<h6><font color="#4ACAB4">Negative Tweets: {{sentiment_results[1]}}</h6>
-			<!-- pie chart canvas element -->
-			<div class="valign" style="margin: auto"><canvas id="countries" width="600" height="300" style="width: 600px; height: 300px;"></canvas></div>
-		<div class = "row">
+			<div class="card-panel center-align">
+				<h6 class="left-align"><font color="#878BB6">Positive Tweets: {{sentiment_results[0]}}</font></h6>
+				<h6 class="left-align"><font color="#4ACAB4">Negative Tweets: {{sentiment_results[1]}}</font></h6>
+				<!-- pie chart canvas element -->
+				<div class="valign" style="margin: auto"><canvas id="countries" width="600" height="300" style="width: 600px; height: 300px;"></canvas></div>
+				<div class = "row">
 
-		<div class="left-align col s6">
-	    	{%for tweet in sentiment_results[2]%}
-	    	<font color="#878BB6">
-	    	<p class="header"><b>@{{tweet[2]}}:</b></p>
-	    	<p>{{tweet[0]}}</p>
-	    	<p>{{tweet[1]}}</p>
-	    	</font>
+					<div class="left-align col s6">
+				    	{%for tweet in sentiment_results[2]%}
+				    	<font color="#878BB6">
+				    	<p class="header"><b>@{{tweet[2]}}:</b></p>
+				    	<p>{{tweet[0]}}</p>
+				    	<p>{{tweet[1]}}</p>
+				    	</font>
 
-	    	{% endfor %}
-	    </div>
-	    <div class="left-align col s6">
-	    	{%for tweet in sentiment_results[3]%}
-	    	<font color="#4ACAB4">
-	    	<p class="header"><b>@{{tweet[2]}}:</b></p>
-	    	<p>{{tweet[0]}}</p>
-	    	<p>{{tweet[1]}}</p>
-	    	</font>
-	    	{% endfor %}
-	    </div>
-		</div>
+				    	{% endfor %}
+				    </div>
+				    <div class="left-align col s6">
+				    	{%for tweet in sentiment_results[3]%}
+				    	<font color="#4ACAB4">
+				    	<p class="header"><b>@{{tweet[2]}}:</b></p>
+				    	<p>{{tweet[0]}}</p>
+				    	<p>{{tweet[1]}}</p>
+				    	</font>
+				    	{% endfor %}
+				    </div>
+				</div>
+			</div>
 		</div>
 	</div>
 
-    <div class="progress" style="display: none; position: absolute; bottom: 0; margin: 0px auto 20px auto">
-    	<div class="indeterminate"></div>
- 	</div>
-
  	<form>
-
- 	<input type="hidden" id="pos_percent" value="{{sentiment_results[4]}}">
- 	<input type="hidden" id="neg_percent" value="{{sentiment_results[5]}}">
-
+	 	<input type="hidden" id="pos_percent" value="{{sentiment_results[4]}}">
+	 	<input type="hidden" id="neg_percent" value="{{sentiment_results[5]}}">
 	</form>
 
 <!-- 	<div class="container">

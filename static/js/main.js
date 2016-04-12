@@ -22,13 +22,8 @@ snowStorm.flakesMaxActive = 96;  // show more snow on screen at once
 snowStorm.useTwinkleEffect = true; // let the snow flicker in and out of view
 snowStorm.followMouse = false;
 
+$("#submit").click(function () {
+	$("#progress").css("display", "block");
+});
 
-function initialize() {
-	var mapProp = {
-		center:new google.maps.LatLng(51.508742,-0.120850),
-		zoom:5,
-		mapTypeId:google.maps.MapTypeId.ROADMAP
-	};
-	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
+
