@@ -1,0 +1,135 @@
+body {
+	background: -webkit-linear-gradient(rgb(10,97,100), rgb(2,37,56)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(rgb(10,97,100), rgb(2,37,56)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(rgb(10,97,100), rgb(2,37,56)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(rgb(10,97,100), rgb(2,37,56)); /* Standard syntax */
+	background-size: cover;  // or cover like Ben Dyer states
+}
+
+
+.landbod{
+	background-image: url("../images/map.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+html,body{
+	width:100% !important; 
+	margin:0px; 
+	padding:0px;
+}
+
+.outer {
+	height: 200% !important; 
+	width: 100% !important;
+}
+
+.page {
+	height:50% !important; 
+	width:100% !important;
+}
+
+#topics {
+	background-color: #f9f9f9;
+}
+
+#topbar {
+	background-color: rgb(5,59,72);
+}
+
+#navbar {
+	height: 70px;
+
+   	background-color: transparent;
+   	background: transparent;
+   	border-color: transparent;
+}
+
+#navbar li { color: #000 } 
+
+.landing-page-top{
+	height:650px;
+	overflow:inherit;
+	position:relative
+}
+
+.landing-page-div{
+	width:100%;
+	text-align:center
+}
+
+.homeLogo{
+	margin:80px 0 0;
+	color:#12c5a2;
+	line-height:3rem;
+	letter-spacing: 2px;
+	padding-bottom: 25px;
+
+}
+
+.homeText{
+	margin-top:20px;
+	color: #ffffff;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+
+.homeText p{
+	margin:0
+}
+
+.homeButtons{
+	margin-top:40px
+}
+
+.vbtns .btn,.vbtns .btn-large{
+	width:140.719
+}
+
+.font-green{
+	color:#12c5a2
+}
+
+
+/*Scroll to Top*/
+.scrollToTop{
+	width:100px; 
+	height:130px;
+	padding:10px; 
+	text-align:center; 
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	bottom:75px;
+	right:40px;
+	display:none;
+	background: url('arrow_up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover{
+	text-decoration:none;
+}
+
+#map {
+	height: 100%
+}
+
+
+#grey_card{
+	background-color: #F0F0F0;
+}
+
+#grey_card2{
+	background-color: #F0F0F0;
+}
+
+#bio_header{
+
+	padding-bottom: 20px;
+}
+
+.brand-logo{
+	letter-spacing: 1.5px;
+}
+

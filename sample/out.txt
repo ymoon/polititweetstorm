@@ -1,0 +1,1846 @@
+Search complete (0.068 seconds)
+{
+  "search_metadata": {
+    "count": 15, 
+    "completed_in": 0.068, 
+    "max_id_str": "711735538269724672", 
+    "since_id_str": "0", 
+    "refresh_url": "?since_id=711735538269724672&q=usa&geocode=37.781157%2C-122.398720%2C250mi&result_type=recent", 
+    "since_id": 0, 
+    "query": "usa", 
+    "max_id": 711735538269724672
+  }, 
+  "statuses": [
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Last Sunday in USA. I will be miss this place. @ San Francisco, California https://t.co/m7noTyp3ch", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711735538269724672, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.418, 
+          37.775
+        ]
+      }, 
+      "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711735538269724672", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": false, 
+        "default_profile_image": false, 
+        "id": 260886193, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif", 
+        "verified": false, 
+        "profile_text_color": "333333", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/707103445958987776/TWf1XwiH_normal.jpg", 
+        "profile_sidebar_fill_color": "EFEFEF", 
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 343, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "260886193", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 5, 
+        "is_translation_enabled": false, 
+        "utc_offset": -25200, 
+        "statuses_count": 12888, 
+        "description": "just human.", 
+        "friends_count": 197, 
+        "location": "", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/707103445958987776/TWf1XwiH_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/260886193/1427802621", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif", 
+        "screen_name": "onionenx", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 6, 
+        "name": "SATAN \u2620", 
+        "notifications": false, 
+        "url": null, 
+        "created_at": "Fri Mar 04 20:26:03 +0000 2011", 
+        "contributors_enabled": false, 
+        "time_zone": "Pacific Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.775, 
+          -122.418
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 02:05:50 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "San Francisco, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/5a110d312052166f.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.514926, 
+                37.708075
+              ], 
+              [
+                -122.357031, 
+                37.708075
+              ], 
+              [
+                -122.357031, 
+                37.833238
+              ], 
+              [
+                -122.514926, 
+                37.833238
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "5a110d312052166f", 
+        "name": "San Francisco"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Compass Group USA #CustomerService #Job: CUSTOMER SERVICE MANAGER II / ACCOUNT MANAGER (Ave C,... (#SanJose, CA) https://t.co/jgM5C1DJTp", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711734835664920576, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -121.8863286, 
+          37.3382082
+        ]
+      }, 
+      "source": "<a href=\"http://www.tweetmyjobs.com\" rel=\"nofollow\">TweetMyJOBS</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711734835664920576", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": false, 
+        "default_profile_image": false, 
+        "id": 126371773, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/587985477224894464/zpjH3OE4.jpg", 
+        "verified": false, 
+        "profile_text_color": "1C1F23", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/707329171140116480/-MGVc2ty_normal.jpg", 
+        "profile_sidebar_fill_color": "C9C9C9", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/xmYcdeiHNh", 
+                "indices": [
+                  0, 
+                  22
+                ], 
+                "expanded_url": "http://www.compassgroupcareers.com", 
+                "display_url": "compassgroupcareers.com"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 821, 
+        "profile_sidebar_border_color": "BFBFBF", 
+        "id_str": "126371773", 
+        "profile_background_color": "6C5955", 
+        "listed_count": 565, 
+        "is_translation_enabled": false, 
+        "utc_offset": -14400, 
+        "statuses_count": 15882, 
+        "description": "Welcome to Compass Group USA's job board. To learn about our people and careers go to @CGCareersUSA", 
+        "friends_count": 124, 
+        "location": "Charlotte, NC", 
+        "profile_link_color": "6C5955", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/707329171140116480/-MGVc2ty_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/126371773/1457540950", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/587985477224894464/zpjH3OE4.jpg", 
+        "screen_name": "CompassJobBoard", 
+        "lang": "en", 
+        "profile_background_tile": true, 
+        "favourites_count": 338, 
+        "name": "CompassUSAJobBoard", 
+        "notifications": false, 
+        "url": "http://t.co/xmYcdeiHNh", 
+        "created_at": "Thu Mar 25 17:13:21 +0000 2010", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.3382082, 
+          -121.8863286
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 02:03:02 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "San Jose, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/7d62cffe6f98f349.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.035311, 
+                37.193164
+              ], 
+              [
+                -121.71215, 
+                37.193164
+              ], 
+              [
+                -121.71215, 
+                37.469154
+              ], 
+              [
+                -122.035311, 
+                37.469154
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "7d62cffe6f98f349", 
+        "name": "San Jose"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "\u4f4e\u6599\u91d1\u3067\u30c6\u30a4\u30b9\u30c6\u30a3\u30f3\u30b0\u3067\u304d\u3066\u3001\u304a\u59c9\u3055\u3093\u65e5\u672c\u8a9e\u8a71\u305b\u308b\u3057\u307b\u3063\u3053\u308a\u3057\u305f\u3002\u306b\u3054\u308a\u9152\u3068\u307f\u308a\u3093\u8cfc\u5165\u3002 (@ Takara Sake USA Inc. in Berkeley, CA) https://t.co/Ex4jwNZ0kA https://t.co/WaHUCSIAFn", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711726892697702400, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.2996259, 
+          37.86604681
+        ]
+      }, 
+      "source": "<a href=\"http://foursquare.com\" rel=\"nofollow\">Foursquare</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711726892697702400", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 12989782, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "verified": false, 
+        "profile_text_color": "333333", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/2240886924/twitter_image_normal.png", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 426, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "12989782", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 27, 
+        "is_translation_enabled": false, 
+        "utc_offset": 32400, 
+        "statuses_count": 52138, 
+        "description": "", 
+        "friends_count": 553, 
+        "location": "Tokyo", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/2240886924/twitter_image_normal.png", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "screen_name": "turux1", 
+        "lang": "ja", 
+        "profile_background_tile": false, 
+        "favourites_count": 547, 
+        "name": "turux1", 
+        "notifications": false, 
+        "url": null, 
+        "created_at": "Sat Feb 02 20:36:12 +0000 2008", 
+        "contributors_enabled": false, 
+        "time_zone": "Tokyo", 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.86604681, 
+          -122.2996259
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "ja", 
+      "created_at": "Mon Mar 21 01:31:29 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "Berkeley, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/5ef5b7f391e30aff.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.324818, 
+                37.8459532
+              ], 
+              [
+                -122.234225, 
+                37.8459532
+              ], 
+              [
+                -122.234225, 
+                37.905738
+              ], 
+              [
+                -122.324818, 
+                37.905738
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "5ef5b7f391e30aff", 
+        "name": "Berkeley"
+      }, 
+      "metadata": {
+        "iso_language_code": "ja", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Join the Compass Group USA team! See our latest #Marketing #job opening here: https://t.co/tqB5R0wyvx #jobhunt #MountainView, CA #Hiring", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711725673090428928, 
+      "favorite_count": 1, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.0838511, 
+          37.3860517
+        ]
+      }, 
+      "source": "<a href=\"http://www.tweetmyjobs.com\" rel=\"nofollow\">TweetMyJOBS</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711725673090428928", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": false, 
+        "default_profile_image": false, 
+        "id": 126371773, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/587985477224894464/zpjH3OE4.jpg", 
+        "verified": false, 
+        "profile_text_color": "1C1F23", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/707329171140116480/-MGVc2ty_normal.jpg", 
+        "profile_sidebar_fill_color": "C9C9C9", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/xmYcdeiHNh", 
+                "indices": [
+                  0, 
+                  22
+                ], 
+                "expanded_url": "http://www.compassgroupcareers.com", 
+                "display_url": "compassgroupcareers.com"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 821, 
+        "profile_sidebar_border_color": "BFBFBF", 
+        "id_str": "126371773", 
+        "profile_background_color": "6C5955", 
+        "listed_count": 565, 
+        "is_translation_enabled": false, 
+        "utc_offset": -14400, 
+        "statuses_count": 15882, 
+        "description": "Welcome to Compass Group USA's job board. To learn about our people and careers go to @CGCareersUSA", 
+        "friends_count": 124, 
+        "location": "Charlotte, NC", 
+        "profile_link_color": "6C5955", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/707329171140116480/-MGVc2ty_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/126371773/1457540950", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/587985477224894464/zpjH3OE4.jpg", 
+        "screen_name": "CompassJobBoard", 
+        "lang": "en", 
+        "profile_background_tile": true, 
+        "favourites_count": 338, 
+        "name": "CompassUSAJobBoard", 
+        "notifications": false, 
+        "url": "http://t.co/xmYcdeiHNh", 
+        "created_at": "Thu Mar 25 17:13:21 +0000 2010", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.3860517, 
+          -122.0838511
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 01:26:38 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "Mountain View, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/b19a2cc5134b7e0a.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.117916, 
+                37.3567709
+              ], 
+              [
+                -122.044969, 
+                37.3567709
+              ], 
+              [
+                -122.044969, 
+                37.436935
+              ], 
+              [
+                -122.117916, 
+                37.436935
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "b19a2cc5134b7e0a", 
+        "name": "Mountain View"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Golden Gate Bridge #sanfrancisco #goldengatebridge #california #usa #sea #bigcity #redbridge\u2026 https://t.co/FowhYY1Hka", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711720981979594754, 
+      "favorite_count": 1, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.47861111, 
+          37.81972222
+        ]
+      }, 
+      "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711720981979594754", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 356832082, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png", 
+        "verified": false, 
+        "profile_text_color": "333333", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/667813756014075904/7-4mpIJV_normal.jpg", 
+        "profile_sidebar_fill_color": "C0DFEC", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/efidwkvoW5", 
+                "indices": [
+                  0, 
+                  22
+                ], 
+                "expanded_url": "http://facebook.com/tony.quinh.nguyen", 
+                "display_url": "facebook.com/tony.quinh.ngu\u2026"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 131, 
+        "profile_sidebar_border_color": "A8C7F7", 
+        "id_str": "356832082", 
+        "profile_background_color": "022330", 
+        "listed_count": 7, 
+        "is_translation_enabled": false, 
+        "utc_offset": 3600, 
+        "statuses_count": 758, 
+        "description": "", 
+        "friends_count": 212, 
+        "location": "Saint-Denis, 93", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/667813756014075904/7-4mpIJV_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/356832082/1444242147", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png", 
+        "screen_name": "TonyKingNeal", 
+        "lang": "fr", 
+        "profile_background_tile": false, 
+        "favourites_count": 11, 
+        "name": "Tony Nguyen", 
+        "notifications": false, 
+        "url": "http://t.co/efidwkvoW5", 
+        "created_at": "Wed Aug 17 12:53:44 +0000 2011", 
+        "contributors_enabled": false, 
+        "time_zone": "Paris", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.81972222, 
+          -122.47861111
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 01:07:59 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "California, USA", 
+        "url": "https://api.twitter.com/1.1/geo/id/fbd6d2f5a4e4a15e.json", 
+        "country": "United States", 
+        "place_type": "admin", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -124.482003, 
+                32.528832
+              ], 
+              [
+                -114.131212, 
+                32.528832
+              ], 
+              [
+                -114.131212, 
+                42.009519
+              ], 
+              [
+                -124.482003, 
+                42.009519
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "fbd6d2f5a4e4a15e", 
+        "name": "California"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Alcatraz #alcatraz #sanfrancisco #island #california #usa #lockedup #sea #northcalifornia #asian\u2026 https://t.co/blNauFTjie", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711720229169192960, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.418, 
+          37.775
+        ]
+      }, 
+      "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711720229169192960", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 356832082, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png", 
+        "verified": false, 
+        "profile_text_color": "333333", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/667813756014075904/7-4mpIJV_normal.jpg", 
+        "profile_sidebar_fill_color": "C0DFEC", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/efidwkvoW5", 
+                "indices": [
+                  0, 
+                  22
+                ], 
+                "expanded_url": "http://facebook.com/tony.quinh.nguyen", 
+                "display_url": "facebook.com/tony.quinh.ngu\u2026"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 131, 
+        "profile_sidebar_border_color": "A8C7F7", 
+        "id_str": "356832082", 
+        "profile_background_color": "022330", 
+        "listed_count": 7, 
+        "is_translation_enabled": false, 
+        "utc_offset": 3600, 
+        "statuses_count": 758, 
+        "description": "", 
+        "friends_count": 212, 
+        "location": "Saint-Denis, 93", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/667813756014075904/7-4mpIJV_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/356832082/1444242147", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png", 
+        "screen_name": "TonyKingNeal", 
+        "lang": "fr", 
+        "profile_background_tile": false, 
+        "favourites_count": 11, 
+        "name": "Tony Nguyen", 
+        "notifications": false, 
+        "url": "http://t.co/efidwkvoW5", 
+        "created_at": "Wed Aug 17 12:53:44 +0000 2011", 
+        "contributors_enabled": false, 
+        "time_zone": "Paris", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.775, 
+          -122.418
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "es", 
+      "created_at": "Mon Mar 21 01:05:00 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "San Francisco, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/5a110d312052166f.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.514926, 
+                37.708075
+              ], 
+              [
+                -122.357031, 
+                37.708075
+              ], 
+              [
+                -122.357031, 
+                37.833238
+              ], 
+              [
+                -122.514926, 
+                37.833238
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "5a110d312052166f", 
+        "name": "San Francisco"
+      }, 
+      "metadata": {
+        "iso_language_code": "es", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "It's rainy today \ud83d\ude15 #sanfrancisco #california #usa #travel #trip #twinpeaks #castro #rain #trees\u2026 https://t.co/1XpscHj89J", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711719422470320128, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.43969243, 
+          37.76026087
+        ]
+      }, 
+      "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711719422470320128", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 226269413, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png", 
+        "verified": false, 
+        "profile_text_color": "333333", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/634355646939426816/HmPh8a-e_normal.jpg", 
+        "profile_sidebar_fill_color": "DDEEF6", 
+        "entities": {
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 170, 
+        "profile_sidebar_border_color": "C0DEED", 
+        "id_str": "226269413", 
+        "profile_background_color": "C0DEED", 
+        "listed_count": 24, 
+        "is_translation_enabled": false, 
+        "utc_offset": 10800, 
+        "statuses_count": 3175, 
+        "description": "Windows Phone Developer, Android Developer, Xamarin Developer, Software Engineer, Computer Science Teacher, Microsoft Student Partner", 
+        "friends_count": 204, 
+        "location": "Taganrog, Russia", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/634355646939426816/HmPh8a-e_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png", 
+        "screen_name": "XeaLStorm", 
+        "lang": "ru", 
+        "profile_background_tile": false, 
+        "favourites_count": 46, 
+        "name": "Alexey Kalachev", 
+        "notifications": false, 
+        "url": null, 
+        "created_at": "Mon Dec 13 19:11:31 +0000 2010", 
+        "contributors_enabled": false, 
+        "time_zone": "Moscow", 
+        "protected": false, 
+        "default_profile": true, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.76026087, 
+          -122.43969243
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 01:01:48 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "San Francisco, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/5a110d312052166f.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.514926, 
+                37.708075
+              ], 
+              [
+                -122.357031, 
+                37.708075
+              ], 
+              [
+                -122.357031, 
+                37.833238
+              ], 
+              [
+                -122.514926, 
+                37.833238
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "5a110d312052166f", 
+        "name": "San Francisco"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Big Campus #berkeley #california #USA #campus #schoolofinformation #calilove #holidays\u2026 https://t.co/WCuHfTz7Ht", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711719048455782400, 
+      "favorite_count": 1, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.2582835, 
+          37.87161073
+        ]
+      }, 
+      "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711719048455782400", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 356832082, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme15/bg.png", 
+        "verified": false, 
+        "profile_text_color": "333333", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/667813756014075904/7-4mpIJV_normal.jpg", 
+        "profile_sidebar_fill_color": "C0DFEC", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "http://t.co/efidwkvoW5", 
+                "indices": [
+                  0, 
+                  22
+                ], 
+                "expanded_url": "http://facebook.com/tony.quinh.nguyen", 
+                "display_url": "facebook.com/tony.quinh.ngu\u2026"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 131, 
+        "profile_sidebar_border_color": "A8C7F7", 
+        "id_str": "356832082", 
+        "profile_background_color": "022330", 
+        "listed_count": 7, 
+        "is_translation_enabled": false, 
+        "utc_offset": 3600, 
+        "statuses_count": 758, 
+        "description": "", 
+        "friends_count": 212, 
+        "location": "Saint-Denis, 93", 
+        "profile_link_color": "0084B4", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/667813756014075904/7-4mpIJV_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/356832082/1444242147", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme15/bg.png", 
+        "screen_name": "TonyKingNeal", 
+        "lang": "fr", 
+        "profile_background_tile": false, 
+        "favourites_count": 11, 
+        "name": "Tony Nguyen", 
+        "notifications": false, 
+        "url": "http://t.co/efidwkvoW5", 
+        "created_at": "Wed Aug 17 12:53:44 +0000 2011", 
+        "contributors_enabled": false, 
+        "time_zone": "Paris", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.87161073, 
+          -122.2582835
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 01:00:18 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "Berkeley, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/5ef5b7f391e30aff.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.324818, 
+                37.8459532
+              ], 
+              [
+                -122.234225, 
+                37.8459532
+              ], 
+              [
+                -122.234225, 
+                37.905738
+              ], 
+              [
+                -122.324818, 
+                37.905738
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "5ef5b7f391e30aff", 
+        "name": "Berkeley"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "#teatop @ TeaTop USA https://t.co/I50kk6w21b", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711718966155223040, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.01250774, 
+          37.3088909
+        ]
+      }, 
+      "source": "<a href=\"http://instagram.com\" rel=\"nofollow\">Instagram</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711718966155223040", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 4641391, 
+        "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif", 
+        "verified": false, 
+        "profile_text_color": "333333", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/19157632/photo_top_normal.png", 
+        "profile_sidebar_fill_color": "EFEFEF", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/y7tyKihWEZ", 
+                "indices": [
+                  0, 
+                  23
+                ], 
+                "expanded_url": "http://about.me/jacoder", 
+                "display_url": "about.me/jacoder"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": [
+              {
+                "url": "https://t.co/FJye9nauX4", 
+                "indices": [
+                  114, 
+                  137
+                ], 
+                "expanded_url": "http://facebook.com/tohru.kao", 
+                "display_url": "facebook.com/tohru.kao"
+              }
+            ]
+          }
+        }, 
+        "followers_count": 180, 
+        "profile_sidebar_border_color": "EEEEEE", 
+        "id_str": "4641391", 
+        "profile_background_color": "131516", 
+        "listed_count": 23, 
+        "is_translation_enabled": false, 
+        "utc_offset": -25200, 
+        "statuses_count": 7417, 
+        "description": "Bay Area Software Enginneer (\u9ad8\u5fb9) who works on Network management software Interests in Cycling, Photo, and Anime. https://t.co/FJye9nauX4", 
+        "friends_count": 440, 
+        "location": "California", 
+        "profile_link_color": "009999", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/19157632/photo_top_normal.png", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/4641391/1360447967", 
+        "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif", 
+        "screen_name": "jacoder", 
+        "lang": "en", 
+        "profile_background_tile": true, 
+        "favourites_count": 95, 
+        "name": "Tohru Kao", 
+        "notifications": false, 
+        "url": "https://t.co/y7tyKihWEZ", 
+        "created_at": "Sat Apr 14 22:56:00 +0000 2007", 
+        "contributors_enabled": false, 
+        "time_zone": "Pacific Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          37.3088909, 
+          -122.01250774
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 00:59:59 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "San Jose, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/7d62cffe6f98f349.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.035311, 
+                37.193164
+              ], 
+              [
+                -121.71215, 
+                37.193164
+              ], 
+              [
+                -121.71215, 
+                37.469154
+              ], 
+              [
+                -122.035311, 
+                37.469154
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "7d62cffe6f98f349", 
+        "name": "San Jose"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "#Job alert: IT Security Architect | Kelly Services | #GoldRiver, CA https://t.co/5257FlUGqk #KellyJobs #KellyServices #Jobs #Hiring", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711709849709490177, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -121.2466156, 
+          38.6262937
+        ]
+      }, 
+      "source": "<a href=\"http://www.tweetmyjobs.com\" rel=\"nofollow\">TweetMyJOBS</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711709849709490177", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 41621024, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/315452663/Twitter-BG_2_bg-image.jpg", 
+        "verified": false, 
+        "profile_text_color": "000000", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/667379470538403841/abcQY8cc_normal.jpg", 
+        "profile_sidebar_fill_color": "407DB0", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/DByWt45HZj", 
+                "indices": [
+                  0, 
+                  23
+                ], 
+                "expanded_url": "http://www.careerarc.com/job-seeker", 
+                "display_url": "careerarc.com/job-seeker"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 893, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "41621024", 
+        "profile_background_color": "253956", 
+        "listed_count": 89, 
+        "is_translation_enabled": false, 
+        "utc_offset": -14400, 
+        "statuses_count": 1364, 
+        "description": "Follow this account for geo-targeted Other job tweets in California Non-Metro. Need help? Tweet us at @CareerArc!", 
+        "friends_count": 544, 
+        "location": "California", 
+        "profile_link_color": "4A913C", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/667379470538403841/abcQY8cc_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/41621024/1447950641", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/315452663/Twitter-BG_2_bg-image.jpg", 
+        "screen_name": "tmj_ca_usa_jobs", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 0, 
+        "name": "CA Non-Metro Jobs", 
+        "notifications": false, 
+        "url": "https://t.co/DByWt45HZj", 
+        "created_at": "Thu May 21 16:35:28 +0000 2009", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          38.6262937, 
+          -121.2466156
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 00:23:45 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "Gold River, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/90291f178137701d.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -121.269185, 
+                38.608255
+              ], 
+              [
+                -121.212728, 
+                38.608255
+              ], 
+              [
+                -121.212728, 
+                38.6381075
+              ], 
+              [
+                -121.269185, 
+                38.6381075
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "90291f178137701d", 
+        "name": "Gold River"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Can you recommend anyone for this #Healthcare #job? https://t.co/jJko5WEf2E #Fresno, CA #Hiring #CareerArc", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711709339266842624, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -119.7725868, 
+          36.7468422
+        ]
+      }, 
+      "source": "<a href=\"http://www.tweetmyjobs.com\" rel=\"nofollow\">TweetMyJOBS</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711709339266842624", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 22720891, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/315958285/Twitter-BG_2_bg-image.jpg", 
+        "verified": false, 
+        "profile_text_color": "000000", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/671046317267750912/wc-rZwQM_normal.jpg", 
+        "profile_sidebar_fill_color": "407DB0", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/DByWt4njnT", 
+                "indices": [
+                  0, 
+                  23
+                ], 
+                "expanded_url": "http://www.careerarc.com/job-seeker", 
+                "display_url": "careerarc.com/job-seeker"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 399, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "22720891", 
+        "profile_background_color": "253956", 
+        "listed_count": 36, 
+        "is_translation_enabled": false, 
+        "utc_offset": -14400, 
+        "statuses_count": 152, 
+        "description": "Follow this account for geo-targeted Healthcare job tweets in Fresno, CA. Need help? Tweet us at @CareerArc!", 
+        "friends_count": 302, 
+        "location": "Fresno, CA", 
+        "profile_link_color": "4A913C", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/671046317267750912/wc-rZwQM_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/22720891/1448824885", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/315958285/Twitter-BG_2_bg-image.jpg", 
+        "screen_name": "tmj_fre_health", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 0, 
+        "name": "TM-FRE Health Jobs", 
+        "notifications": false, 
+        "url": "https://t.co/DByWt4njnT", 
+        "created_at": "Wed Mar 04 02:31:46 +0000 2009", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          36.7468422, 
+          -119.7725868
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 00:21:44 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "Fresno, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/944c03c1d85ef480.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -119.93251, 
+                36.648905
+              ], 
+              [
+                -119.632419, 
+                36.648905
+              ], 
+              [
+                -119.632419, 
+                36.923179
+              ], 
+              [
+                -119.93251, 
+                36.923179
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "944c03c1d85ef480", 
+        "name": "Fresno"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "If you're a professional in #GoldRiver, CA, check out this #job: https://t.co/G1YwEJGp4x #KellyJobs #KellyServices #Hiring #CareerArc", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711707098543816705, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -121.2466156, 
+          38.6262937
+        ]
+      }, 
+      "source": "<a href=\"http://www.tweetmyjobs.com\" rel=\"nofollow\">TweetMyJOBS</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711707098543816705", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 41621024, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/315452663/Twitter-BG_2_bg-image.jpg", 
+        "verified": false, 
+        "profile_text_color": "000000", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/667379470538403841/abcQY8cc_normal.jpg", 
+        "profile_sidebar_fill_color": "407DB0", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/DByWt45HZj", 
+                "indices": [
+                  0, 
+                  23
+                ], 
+                "expanded_url": "http://www.careerarc.com/job-seeker", 
+                "display_url": "careerarc.com/job-seeker"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 893, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "41621024", 
+        "profile_background_color": "253956", 
+        "listed_count": 89, 
+        "is_translation_enabled": false, 
+        "utc_offset": -14400, 
+        "statuses_count": 1364, 
+        "description": "Follow this account for geo-targeted Other job tweets in California Non-Metro. Need help? Tweet us at @CareerArc!", 
+        "friends_count": 544, 
+        "location": "California", 
+        "profile_link_color": "4A913C", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/667379470538403841/abcQY8cc_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/41621024/1447950641", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/315452663/Twitter-BG_2_bg-image.jpg", 
+        "screen_name": "tmj_ca_usa_jobs", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 0, 
+        "name": "CA Non-Metro Jobs", 
+        "notifications": false, 
+        "url": "https://t.co/DByWt45HZj", 
+        "created_at": "Thu May 21 16:35:28 +0000 2009", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          38.6262937, 
+          -121.2466156
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 00:12:49 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "Gold River, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/90291f178137701d.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -121.269185, 
+                38.608255
+              ], 
+              [
+                -121.212728, 
+                38.608255
+              ], 
+              [
+                -121.212728, 
+                38.6381075
+              ], 
+              [
+                -121.269185, 
+                38.6381075
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "90291f178137701d", 
+        "name": "Gold River"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "Want to work at The Vitamin Shoppe? We're #hiring in #Redding, CA! Click for details: https://t.co/D81mOygJFO #Job #Jobs #CareerArc", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711704389665198080, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -122.3507788, 
+          40.5881385
+        ]
+      }, 
+      "source": "<a href=\"http://www.tweetmyjobs.com\" rel=\"nofollow\">TweetMyJOBS</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711704389665198080", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 41621024, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/315452663/Twitter-BG_2_bg-image.jpg", 
+        "verified": false, 
+        "profile_text_color": "000000", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/667379470538403841/abcQY8cc_normal.jpg", 
+        "profile_sidebar_fill_color": "407DB0", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/DByWt45HZj", 
+                "indices": [
+                  0, 
+                  23
+                ], 
+                "expanded_url": "http://www.careerarc.com/job-seeker", 
+                "display_url": "careerarc.com/job-seeker"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 893, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "41621024", 
+        "profile_background_color": "253956", 
+        "listed_count": 89, 
+        "is_translation_enabled": false, 
+        "utc_offset": -14400, 
+        "statuses_count": 1364, 
+        "description": "Follow this account for geo-targeted Other job tweets in California Non-Metro. Need help? Tweet us at @CareerArc!", 
+        "friends_count": 544, 
+        "location": "California", 
+        "profile_link_color": "4A913C", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/667379470538403841/abcQY8cc_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/41621024/1447950641", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/315452663/Twitter-BG_2_bg-image.jpg", 
+        "screen_name": "tmj_ca_usa_jobs", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 0, 
+        "name": "CA Non-Metro Jobs", 
+        "notifications": false, 
+        "url": "https://t.co/DByWt45HZj", 
+        "created_at": "Thu May 21 16:35:28 +0000 2009", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          40.5881385, 
+          -122.3507788
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 00:02:03 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "Redding, CA", 
+        "url": "https://api.twitter.com/1.1/geo/id/7d51c8dfbb08a9de.json", 
+        "country": "United States", 
+        "place_type": "city", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -122.452708, 
+                40.456935
+              ], 
+              [
+                -122.267398, 
+                40.456935
+              ], 
+              [
+                -122.267398, 
+                40.651054
+              ], 
+              [
+                -122.452708, 
+                40.651054
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "7d51c8dfbb08a9de", 
+        "name": "Redding"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }, 
+    {
+      "contributors": null, 
+      "truncated": false, 
+      "text": "We're #hiring! Click to apply: REGIONAL SALES DIRECTOR - Orange County, CA - https://t.co/1Qyj3vhky0 #Sales #OrangeCounty, CA #Job #Jobs", 
+      "is_quote_status": false, 
+      "in_reply_to_status_id": null, 
+      "id": 711704157594341376, 
+      "favorite_count": 0, 
+      "retweeted": false, 
+      "coordinates": {
+        "type": "Point", 
+        "coordinates": [
+          -119.4179324, 
+          36.778261
+        ]
+      }, 
+      "source": "<a href=\"http://www.tweetmyjobs.com\" rel=\"nofollow\">TweetMyJOBS</a>", 
+      "in_reply_to_screen_name": null, 
+      "in_reply_to_user_id": null, 
+      "retweet_count": 0, 
+      "id_str": "711704157594341376", 
+      "favorited": false, 
+      "user": {
+        "follow_request_sent": false, 
+        "has_extended_profile": false, 
+        "profile_use_background_image": true, 
+        "default_profile_image": false, 
+        "id": 22720619, 
+        "profile_background_image_url_https": "https://pbs.twimg.com/profile_background_images/315539872/Twitter-BG_2_bg-image.jpg", 
+        "verified": false, 
+        "profile_text_color": "000000", 
+        "profile_image_url_https": "https://pbs.twimg.com/profile_images/676693580635762689/oz5Hg2lu_normal.jpg", 
+        "profile_sidebar_fill_color": "407DB0", 
+        "entities": {
+          "url": {
+            "urls": [
+              {
+                "url": "https://t.co/DByWt45HZj", 
+                "indices": [
+                  0, 
+                  23
+                ], 
+                "expanded_url": "http://www.careerarc.com/job-seeker", 
+                "display_url": "careerarc.com/job-seeker"
+              }
+            ]
+          }, 
+          "description": {
+            "urls": []
+          }
+        }, 
+        "followers_count": 344, 
+        "profile_sidebar_border_color": "000000", 
+        "id_str": "22720619", 
+        "profile_background_color": "253956", 
+        "listed_count": 27, 
+        "is_translation_enabled": false, 
+        "utc_offset": -14400, 
+        "statuses_count": 68, 
+        "description": "Follow this account for geo-targeted Sales job tweets in Fresno, CA. Need help? Tweet us at @CareerArc!", 
+        "friends_count": 307, 
+        "location": "Fresno, CA", 
+        "profile_link_color": "4A913C", 
+        "profile_image_url": "http://pbs.twimg.com/profile_images/676693580635762689/oz5Hg2lu_normal.jpg", 
+        "following": false, 
+        "geo_enabled": true, 
+        "profile_banner_url": "https://pbs.twimg.com/profile_banners/22720619/1450171298", 
+        "profile_background_image_url": "http://pbs.twimg.com/profile_background_images/315539872/Twitter-BG_2_bg-image.jpg", 
+        "screen_name": "tmj_fre_sales", 
+        "lang": "en", 
+        "profile_background_tile": false, 
+        "favourites_count": 0, 
+        "name": "TMJ-FRE Sales Jobs", 
+        "notifications": false, 
+        "url": "https://t.co/DByWt45HZj", 
+        "created_at": "Wed Mar 04 02:29:31 +0000 2009", 
+        "contributors_enabled": false, 
+        "time_zone": "Eastern Time (US & Canada)", 
+        "protected": false, 
+        "default_profile": false, 
+        "is_translator": false
+      }, 
+      "geo": {
+        "type": "Point", 
+        "coordinates": [
+          36.778261, 
+          -119.4179324
+        ]
+      }, 
+      "in_reply_to_user_id_str": null, 
+      "possibly_sensitive": false, 
+      "lang": "en", 
+      "created_at": "Mon Mar 21 00:01:08 +0000 2016", 
+      "in_reply_to_status_id_str": null, 
+      "place": {
+        "full_name": "California, USA", 
+        "url": "https://api.twitter.com/1.1/geo/id/fbd6d2f5a4e4a15e.json", 
+        "country": "United States", 
+        "place_type": "admin", 
+        "bounding_box": {
+          "type": "Polygon", 
+          "coordinates": [
+            [
+              [
+                -124.482003, 
+                32.528832
+              ], 
+              [
+                -114.131212, 
+                32.528832
+              ], 
+              [
+                -114.131212, 
+                42.009519
+              ], 
+              [
+                -124.482003, 
+                42.009519
+              ]
+            ]
+          ]
+        }, 
+        "contained_within": [], 
+        "country_code": "US", 
+        "attributes": {}, 
+        "id": "fbd6d2f5a4e4a15e", 
+        "name": "California"
+      }, 
+      "metadata": {
+        "iso_language_code": "en", 
+        "result_type": "recent"
+      }
+    }
+  ]
+}

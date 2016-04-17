@@ -1,0 +1,105 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+	<title>Polititweetstorm</title>
+	<!--Import Google Icon Font-->
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--Import materialize.css-->
+  	<link type="text/css" rel="stylesheet" href="{{url_for('static', filename='css/materialize.min.css')}}" media="screen,projection"/>
+	<link rel="stylesheet" href="{{url_for('static', filename='css/search.css')}}" />
+	<link rel="stylesheet" href="{{url_for('static', filename='css/landing.css')}}" />
+
+
+	<!-- Snowstorm Magic -->
+	<script type="text/javascript" src="{{url_for('static', filename='js/snowstorm-min.js')}}"></script>
+
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta charset="utf-8">
+</head>
+<body>
+	<div class="navbar-fixed" id="topbar">
+		<nav id="topbar">
+			<div class="nav-wrapper container">
+		  		<a href="{{url_for('main.main_route')}}" class="brand-logo">polititweetstorm</a>
+		  		<ul id="nav-mobile" class="right hide-on-med-and-down">
+			        <li><a href="{{url_for('search.search_route')}}"><i class="material-icons">search</i></a></li>
+		  		</ul>
+			</div>
+		</nav>
+	</div>
+
+
+	<div class="container">
+	    <div id="topics" class="card-panel section scrollspy">
+			<div class="row valign-wrapper">    	
+				<div class="col s6 valign center-align">
+		    		<h2 class="header blue-grey-text text-darken-4"><i class="material-icons">search</i> Search</h2>
+				</div>
+				<div class="col s6 valign">
+			    	<form action="" method= "POST" enctype="multipart/form-data">
+			    		<div class="section">
+				    		<h7>Enter a location <i class="material-icons">location_searching</i></h7>
+				    		<input id = 'pac-input' type="text" name="location">
+				    	</div>
+				    	<div class="section">
+							<h7>Select a trending topic <i class="material-icons">trending_up</i></h7>
+				    		{% for topic in topics %}
+							<p>
+			      			<input name="topic" type="radio" id="test_{{topic}}" value="{{topic}}" />
+			      			<label for="test_{{topic}}" class="blue-grey-text text-darken-4">{{topic}}</label>
+			    			</p>
+				    		{% endfor %}
+						</div>
+			    		<br>
+			    		<!-- <input type="submit" value="Submit"> -->
+			    		<button class="btn waves-effect waves-light" id="submit" type="submit" value="Submit" name="action">Submit
+		    				<i class="material-icons right">send</i>
+		  				</button>
+			    	</form>
+			    </div>
+		    </div>
+	    </div>
+	</div>
+
+	<div class="progress" id="progress" style="display: none; position: absolute; bottom: 0; margin: 0px auto 35x auto">
+    	<div class="indeterminate"></div>
+ 	</div>
+    
+	<a href="#" class="scrollToTop"><i class="material-icons medium font-green">keyboard_arrow_up</i></a>
+
+  	<!-- Google Maps API -->
+	<!--   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E&callback=initMap"
+    type="text/javascript"></script> -->
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
+	<script type="text/javascript" src="{{url_for('static', filename='js/materialize.min.js')}}"></script>
+	<script type="text/javascript" src="{{url_for('static', filename='js/main.js')}}"></script>
+
+	 <script>
+      // This example adds a search box to a map, using the Google Place Autocomplete
+      // feature. People can enter geographical searches. The search box will return a
+      // pick list containing a mix of places and predicted search terms.
+
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      function initAutocomplete() {
+
+        // Create the search box and link it to the UI element.
+        var input = document.getElementById('pac-input');
+        var searchBox = new google.maps.places.SearchBox(input);
+        
+      }
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCTNIg-6BKYrjrB9DnLij6tX4sAw_XeYrk&libraries=places&callback=initAutocomplete"
+         async defer></script>
+  </body>
+</body>
+
+</html>
