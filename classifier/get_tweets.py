@@ -5,16 +5,16 @@ from twitter import *
 
 def grab_tweets(topic, location):
 	
-	#Load the twitter api information
+	# Load the twitter api information
 	config = {}
 	execfile("config.py", config)
 
 	lat = str(location[0])
 	lng = str(location[1])
-	radius = "20mi" #subject to change, just for testing
+	radius = "20mi" # Arbitrary but seems to work well
 	location = lat + ',' + lng + ',' + radius
 
-	#configure
+	# Configure
 	twitter = Twitter(auth = OAuth(config["access_key"], config["access_secret"], config["consumer_key"], config["consumer_secret"]))
 
 	#Search for tweets in a specific location that contain a certain topic (passed as paramaters)

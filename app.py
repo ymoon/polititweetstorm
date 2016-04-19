@@ -15,6 +15,4 @@ app.register_blueprint(controllers.search, url_prefix='/polititweetstorm', stati
 if __name__ == '__main__':
     # listen on external IPs
     # change to host for server when submitting
-    # app.run(host='eecs485-22.eecs.umich.edu', port=2600, debug=False)
-    # app.run(host='eecs485-22.eecs.umich.edu', port=2601, debug=False)
     app.run(host='0.0.0.0', port=3000, debug=True)
