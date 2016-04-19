@@ -13,13 +13,13 @@ input = "sad.csv"
 
 # Dictionaries to store information from training - with examples
 
-#dictionary mapping the number of positive tweets that appear in data and the number of negative tweets
+# Dictionary mapping the number of positive tweets that appear in data and the number of negative tweets
 #eg. {positive: 4992000, negative: 423482340203}
 class_probs = {}
-#dictionary mapping the size (i.e. how many words (not unique) per positive and negative)
+# Dictionary mapping the size (i.e. how many words (not unique) per positive and negative)
 #eg. {positive: 209348209348129348, negative: 2039482093481234}
 cateogry_size = {}
-#dictionary mapping the frequency of the word given the sentiment
+# Dictionary mapping the frequency of the word given the sentiment
 #eg {positive: {hey: 4, how: 5, is: 6, your_mom: 80000, negative: {lolz: 234}}
 word_probs = {}
 
