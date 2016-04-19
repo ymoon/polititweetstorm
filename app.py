@@ -2,17 +2,14 @@ from flask import Flask, render_template
 
 # from extensions import mysql
 import controllers
-import api
 
 # Initialize Flask app with the template folder address
 app = Flask(__name__, template_folder='templates')
 
 # Register the controllers
-app.register_blueprint(controllers.twitter_api, url_prefix='/polititweetstorm', static_url_path="static")
 app.register_blueprint(controllers.main, url_prefix='/polititweetstorm', static_url_path="static")
 app.register_blueprint(controllers.search, url_prefix='/polititweetstorm', static_url_path="static")
 app.register_blueprint(controllers.results, url_prefix='/polititweetstorm', static_url_path="static")
-app.register_blueprint(controllers.dani, url_prefix='/polititweetstorm', static_url_path="static")
 
 # Listen on external IPs
 # For us, listen to port 3000 so you can just run 'python app.py' to start the server
