@@ -65,6 +65,6 @@ dictionaries.append(cateogry_size)
 dictionaries.append(word_probs)
 
 
-with open("training_informationNEW.json", 'w') as train:
+with open("training_information.json", 'w') as train:
     json.dump(dictionaries, train)
 
