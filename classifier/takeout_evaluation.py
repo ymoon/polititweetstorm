@@ -1,10 +1,11 @@
 import pandas
-#from nltk.classify import NaiveBayesClassifier as NBC
 from nltk import FreqDist as fd
 from nltk.tokenize import word_tokenize
 import nltk
 import json
 import math
+
+# File for evaluation testing and training
 
 #deals with decoding errors
 import sys

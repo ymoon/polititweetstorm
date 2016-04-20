@@ -20,14 +20,14 @@ def get_top_topics():
 	execfile("config.py", config)
 
 	#-----------------------------------------------------------------------
-	# create twitter API object
+	# Create twitter API object
 	#-----------------------------------------------------------------------
 	twitter = Twitter(
 			        auth = OAuth(config["access_key"], config["access_secret"], config["consumer_key"], config["consumer_secret"]))
 
 
 	#-----------------------------------------------------------------------
-	# perform a basic search 
+	# Perform a basic search 
 	# Twitter API docs:
 	# https://dev.twitter.com/docs/api/1/get/search
 	#-----------------------------------------------------------------------
@@ -60,9 +60,7 @@ def get_top_topics():
 	stop_words["https"] = True
 	stop_words["http"] = True
 
-	# with open("politicalterms.txt", "a") as myfile:
-	# 	for result in query["statuses"]:
-	# 		myfile.write(result["text"].encode("utf-8") + "\n")
+	
 	frequencies = {}
 	count = 0
 	for result in query["statuses"]:
@@ -84,18 +82,18 @@ def get_top_topics():
 	all_tweets = re.sub('https\S+', " ", all_tweets)
 	all_tweets = re.sub('\W'," ", all_tweets)
 
-    #single words
+    # Single words
 	for word in all_tweets.split():
 		if (not stop_words.get(word.lower(), False)):
 			frequencies[word.lower()] = frequencies.get(word.lower(), 0) + 1
 	sorted_frequencies = sorted(frequencies.items(), key=operator.itemgetter(1), reverse= True)
 
-	#list of only the terms without frequency
+	# List of only the terms without frequency
 	term_list = sorted_frequencies[:30]
 	term_list = [i[0] for i in term_list]
 
 
-	#final fuzzy sets creation and checking for bigrams
+	# Final bigram sets creation and checking for bigrams
 	fuzzy_sets = []
 	bigram_words = []
 
@@ -123,7 +121,7 @@ def get_top_topics():
 	    	break
 	    count4 += 1
 
-	#printing for testing
+	# Printing for testing
 	count1 = 0
 	# while count1 < 20:
 	# 	# print sorted_frequencies[count1]
