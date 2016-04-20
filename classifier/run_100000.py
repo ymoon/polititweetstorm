@@ -29,7 +29,7 @@ def sent_system():
     keys_post = set(word_probs["pos"].keys())
     vocab = keys_neg & keys_post
     vocab_size = len(vocab)
-    total = 1000  # total number of tweets we are testing
+    total = 100000  # total number of tweets we are testing
     correct = 0
 
     input = "sad.csv"
