@@ -1,5 +1,4 @@
 from nltk.tokenize import word_tokenize
-from alchemyapi_python.alchemyapi import AlchemyAPI
 import nltk
 import json
 import math
@@ -41,26 +40,10 @@ def sent_system(search_results, text_to_info):
 	vocab = keys_neg & keys_post
 	vocab_size = len(vocab)
 
-	alc = AlchemyAPI()
-	alc_neg_count = 0
-	alc_pos_count = 0
-	alc_sent_score = 0.0
 
 	# Loop through search_results to classify each tweet in results
 	for tweet in search_results:
-		#use alchemyAPI to determine if positive or negative
-		sent_response = alc.sentiment("text", tweet)
-		#calculate if there are more positive or more negative examples
-		if sent_response["docSentiment"]["type"] == "negative":
-			alc_neg_count += 1
-		elif sent_response["docSentiment"]["type"] == "positive":
-			alc_pos_count += 1
-
-		#add sent score value to system to determine overall score
-			#when neutral no score is present 
-		if (sent_response["docSentiment"]["type"] != "neutral"):
-			alc_sent_score += float(sent_response["docSentiment"]["score"])
-
+		
 		# BELOW IS OLD SYSTEM - FOR NOW RUN BOTH
 		# Dictionary to map positive and negative to their 
 			# respective probabilites, the max of the two will be the sentiment
@@ -104,10 +87,10 @@ def sent_system(search_results, text_to_info):
 		pos_examples[i] = text_to_info[pos_examples[i]]
 	for i in range(len(neg_examples)):
 		neg_examples[i] = text_to_info[neg_examples[i]]
-	print pos
-	print pos_examples
-	print neg
-	print neg_examples
+	# print pos
+	# print pos_examples
+	# print neg
+	# print neg_examples
 	if (pos + neg > 0):
 		pos_percent = (pos/float(pos+neg)) * 100
 		neg_percent = (neg/float(pos+neg)) * 100
@@ -115,25 +98,9 @@ def sent_system(search_results, text_to_info):
 		print "Something went wrong/no tweets were found"
 		pos_percent = 0
 		neg_percent = 0
-	print pos_percent
-	print neg_percent
+	# print pos_percent
+	# print neg_percent
 
-	if alc_neg_count > alc_pos_count:
-		alc_sent_from_examples = "negative"
-	elif alc_neg_count < alc_pos_count:
-		alc_sent_from_examples = "positive"
-	else:
-		alc_sent_from_examples = "neutral"
-	print "Sentiment from examples: ", alc_sent_from_examples
-
-	if alc_sent_score < 0:
-		alc_sent_from_score = "negative"
-	elif alc_sent_score > 0:
-		alc_sent_from_score = "positive"
-	else:
-		alc_sent_from_score = "neutral"
-
-	print "Sentiment from score: ", alc_sent_from_score 
 
 	return(pos, neg, pos_examples, neg_examples, pos_percent, neg_percent)
 

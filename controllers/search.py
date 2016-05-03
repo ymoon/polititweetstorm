@@ -1,6 +1,7 @@
 from flask import *
 import classifier.get_tweets as gt
 import classifier.system as ns
+import classifier.alc_system as alcS
 import classifier.topic_search as ts
 import googlemaps
 import json
@@ -54,6 +55,7 @@ def search_route():
 					relevent_tweets.add(sentence)
 
 		sentiment_results = ns.sent_system(relevent_tweets, text_to_info)
+		alc_sentiment_results = alcS.alc_sent_system(relevent_tweets, text_to_info, topic)
 		
 		return render_template("results.html", sentiment_results = sentiment_results, topic = topic, location = location_name)
 	else: # Display trending topics - The normal search page 
