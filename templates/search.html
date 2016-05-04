@@ -51,6 +51,7 @@
 			      			<label for="test_{{topic}}" class="blue-grey-text text-darken-4">{{topic}}</label>
 			    			</p>
 				    		{% endfor %}
+
 						</div>
 			    		<br>
 			    		<!-- <input type="submit" value="Submit"> -->
@@ -58,7 +59,16 @@
 		    				<i class="material-icons right">send</i>
 		  				</button>
 			    	</form>
-			    </div>
+			    	<br>
+			    	<div right="500" bottom="0">
+			    	<form action="" method="POST">
+			    		<input type="hidden" name="op" value="topic_refresh">
+			   			<button class="btn waves-effect waves-light z-depth-4" id="submit_reset_topic" type="submit" value="Refresh Topics" name="action">Refresh Topics <!-- <i class="material-icons left">forward_10</i>  <i class="material-icons right">replay</i> --> <i class="material-icons left">loop</i> <i class="material-icons right">loop</i> </button>
+			   			
+			    	</form>
+			    	</div>
+			    </div>   
+			    
 		    </div>
 	    </div>
 	</div>
@@ -68,6 +78,8 @@
  	</div>
     
 	<a href="#" class="scrollToTop"><i class="material-icons medium font-green">keyboard_arrow_up</i></a>
+
+
 
   	<!-- Google Maps API -->
 	<!--   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaTezxIdTWTYNSd50NSHG2mYLRPfxs13E&callback=initMap"
@@ -101,5 +113,6 @@
          async defer></script>
   </body>
 </body>
+
 
 </html>
