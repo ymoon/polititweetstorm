@@ -44,7 +44,7 @@ def sent_system(search_results, text_to_info):
 	# Loop through search_results to classify each tweet in results
 	for tweet in search_results:
 		
-		# BELOW IS OLD SYSTEM - FOR NOW RUN BOTH
+		
 		# Dictionary to map positive and negative to their 
 			# respective probabilites, the max of the two will be the sentiment
 		sent_probs = {}

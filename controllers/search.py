@@ -32,6 +32,7 @@ def search_route():
 		else:
 			text_to_info = {}
 			topic = request.form.get("topic")
+			orig_topic = topic
 			location_name = request.form.get("location")
 			print location_name
 			print topic
@@ -59,10 +60,15 @@ def search_route():
 						text_to_info[sentence] = (sentence, x["created_at"], x["user"]["screen_name"])
 						relevent_tweets.add(sentence)
 
-			sentiment_results = ns.sent_system(relevent_tweets, text_to_info)
-			alc_sentiment_results = alcS.alc_sent_system(relevent_tweets, text_to_info, topic)
-			
-			return render_template("results.html", sentiment_results=sentiment_results, topic=topic, location=location_name)
+			if request.form.get("action") == "Submit":
+				print "entered submit reg"
+				sentiment_results = ns.sent_system(relevent_tweets, text_to_info)
+				return render_template("results.html", sentiment_results=sentiment_results, topic=topic, location=location_name)
+			elif request.form.get("action") == "AlchemySubmit":
+				print "entered submit alchemy"
+				alc_sentiment_results = alcS.alc_sent_system(relevent_tweets, text_to_info, orig_topic)
+				entity = alc_sentiment_results[-1]
+				return render_template("alchemyresults.html", sentiment_results=alc_sentiment_results[:-1], topic=entity, location=location_name)
 	else: # Display trending topics - The normal search page 
 		# Check if topics have been stored in cookies/already retrieved for the day
 		if 'topics' not in session:
