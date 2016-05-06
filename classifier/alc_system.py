@@ -30,7 +30,7 @@ def alc_sent_system(search_results, text_to_info, topic):
 	# Grab the entity of the topic 
 	# There should only be one with the unigram/bigram provided
 	try:
-		ent_topic = alc.entities("text", topic, {'sentiment': 0})["entities"][0]["text"].lower()
+		ent_topic = alc.entities("text", topic, {'sentiment': 0, 'language': 'english'})["entities"][0]["text"].lower()
 		print "valid topic entity", ent_topic
 	except:
 		# topic has no entity so just grab basic doc text sentiment
@@ -40,14 +40,14 @@ def alc_sent_system(search_results, text_to_info, topic):
 	for tweet in search_results:
 		#Look into entity recognition and actually extracting sentiment towards the entity searched for and not just the overall tweet
 		the_sent = "neutral"
-		ent_response = alc.entities("text", tweet, {'sentiment': 1})
+		ent_response = alc.entities("text", tweet, {'sentiment': 1, 'language': 'english'})
 		if (ent_topic and ("entities" in ent_response)):
 			# Entity recognition based sentiment analysis
 			for ent in ent_response["entities"]:
-				print ent["text"].lower()
+				#print ent["text"].lower()
 				#check if the entity in the tweet is the same/is within the topic entity or vice versa
 				if ((ent["text"].lower() in ent_topic) or (ent_topic in ent["text"].lower())):
-					print "entity in tweet was part of topic entity", ent_topic
+					#print "entity in tweet was part of topic entity", ent_topic
 					# Get Sentiment
 					if ent["sentiment"]["type"] == "negative":
 						alc_neg_count += 1
@@ -58,11 +58,11 @@ def alc_sent_system(search_results, text_to_info, topic):
 					# Get Sentiment score
         			if  "score" in ent["sentiment"]:
 						alc_sent_score += float(ent["sentiment"]["score"])
-		else:
+		else: #no entities found in the tweet just clasify the entire tweet
 			#use alchemyAPI to determine if positive or negative
-			sent_response = alc.sentiment("text", tweet)
-			
+			sent_response = alc.sentiment("text", tweet, {'language': 'english'})
 			#calculate if there are more positive or more negative examples
+				
 			if sent_response["docSentiment"]["type"] == "negative":
 				alc_neg_count += 1
 				the_sent = "negative"
@@ -78,6 +78,7 @@ def alc_sent_system(search_results, text_to_info, topic):
 		#Gather tweet examples
 		if the_sent == "positive":
 			if len(pos_examples) < 10:
+				print "adding positive example"
 				pos_examples.append(tweet)
 		elif the_sent == "negative":
 			if len(neg_examples) < 10:
@@ -90,9 +91,9 @@ def alc_sent_system(search_results, text_to_info, topic):
 	for i in range(len(neg_examples)):
 		neg_examples[i] = text_to_info[neg_examples[i]]
 	# print pos
-	# print pos_examples
+	#print pos_examples
 	# print neg
-	# print neg_examples
+	print neg_examples
 	if (alc_pos_count + alc_neg_count > 0):
 		pos_percent = (alc_pos_count/float(alc_pos_count+alc_neg_count)) * 100
 		neg_percent = (alc_neg_count/float(alc_pos_count+alc_neg_count)) * 100
