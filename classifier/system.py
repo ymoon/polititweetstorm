@@ -43,8 +43,15 @@ def sent_system(search_results, text_to_info):
 
 	# Loop through search_results to classify each tweet in results
 	for tweet in search_results:
+
+
+	# Loop through search_results to classify each tweet in results
+	for tweet in search_results:
 		
-		
+
+		# BELOW IS OLD SYSTEM - FOR NOW RUN BOTH
+
+
 		# Dictionary to map positive and negative to their 
 			# respective probabilites, the max of the two will be the sentiment
 		sent_probs = {}
@@ -87,10 +94,17 @@ def sent_system(search_results, text_to_info):
 		pos_examples[i] = text_to_info[pos_examples[i]]
 	for i in range(len(neg_examples)):
 		neg_examples[i] = text_to_info[neg_examples[i]]
+
+	print pos
+	print pos_examples
+	print neg
+	print neg_examples
+
 	# print pos
 	# print pos_examples
 	# print neg
 	# print neg_examples
+
 	if (pos + neg > 0):
 		pos_percent = (pos/float(pos+neg)) * 100
 		neg_percent = (neg/float(pos+neg)) * 100
@@ -98,6 +112,10 @@ def sent_system(search_results, text_to_info):
 		print "Something went wrong/no tweets were found"
 		pos_percent = 0
 		neg_percent = 0
+
+	print pos_percent
+	print neg_percent
+
 	# print pos_percent
 	# print neg_percent
 
