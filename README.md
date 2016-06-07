@@ -4,12 +4,12 @@ POLITITWEETSTORM
 EECS 498-1 (486) W16 Final Project
 Welcome to the world of #polititweetstorm.
 We are (Team Members):
-```
-	- Danielle Livneh
-	- John Moon
-	- Aren Vogel
-	- Mathew Wiesman
-```
+
+-	Danielle Livneh
+-	John Moon
+-	Aren Vogel
+-	Mathew Wiesman
+
 Students of Professor Mihalacea's Information Retrieval Class at the University of Michigan. 
 Our goal with #polititweetstorm was to create a real time web application to display the sentiment of trending political topics in a given location.
 Learn more about the goal and process in detail from our paper.
@@ -17,10 +17,11 @@ Learn more about the goal and process in detail from our paper.
 ----------------------
 SETTING UP
 ----------------------
+```
 1. Navigate to the main polititweetstorm directory
 2. run: pip install -r requirements.txt
 	This should install all APIs and Modules necessary to run the project
-
+```
 ----------------------
 TRAINING YOUR SYSTEM
 ----------------------
