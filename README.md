@@ -25,14 +25,14 @@ SETTING UP
 ----------------------
 TRAINING YOUR SYSTEM
 ----------------------
-To run training:
-```
+To run training: \n
+
 1. Naivgate to the classifier directory
 2. Unzip sad.csv.zip which is your training dataset
 3. run: python training.py
 	The output will be stored in training_information.json
 4. You now have json formatted data storing a dictionary that represents a trained Naive Bayes Classifier
-```
+
 
 ----------------------
 LAUNCH THE WEB APPLICATION
